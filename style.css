@@ -76,19 +76,50 @@ h1 {
 h2 {
   font-family: var(--ff-sec);
   font-size: var(--fs-l);
-  font-weight: bold;
+  font-weight: 300;
   color: var(--clr-blck);
   line-height: 1.1;
-  width: fit-content;
   margin: auto;
   margin-top: var(--sp-l);
-  text-transform: uppercase;
 }
 
 h3 {
   font-family: var(--ff-sec);
   color: var(--clr-blck);
   margin-top: var(--sp-l);
+}
+
+.categoryflex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: var(--sp-m);
+}
+
+.categoryflex h2 {
+  width: 100px;
+  padding-left: 2vw;
+  margin-top: 0;
+  margin-left: 5vw;
+}
+
+.categoryflex .categoryitemflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoryflex .categoryitemflex p {
+  text-align: center;
+}
+
+.frontpagecontent img {
+  width: 100%;
+}
+
+.categoryitems img {
+  width: 60%;
+}
+.categoryitems {
+  justify-content: space-between;
 }
 
 footer {
