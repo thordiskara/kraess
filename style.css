@@ -38,6 +38,43 @@ a {
   color: #000;
 }
 
+body {
+  background-color: var(--clr-whte);
+  font-family: var(--ff-pri);
+}
+
+img {
+  max-width: 100%;
+}
+li,
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-xl);
+  font-weight: normal;
+  color: var(--clr-blck);
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-l);
+  font-weight: 300;
+  color: var(--clr-blck);
+  line-height: 1.1;
+  margin: auto;
+  margin-top: var(--sp-l);
+}
+
+h3 {
+  font-family: var(--ff-sec);
+  color: var(--clr-blck);
+  margin-top: var(--sp-l);
+}
+
 /*HEADER*/
 /* SCROLL BANNER */
 #scrollBanner {
@@ -305,64 +342,24 @@ li a {
 
 /* FRONT PAGE */
 
-.body {
-  font-family: var(--ff-pri);
-  overflow-x: hidden;
-}
-
-body {
-  background-color: var(--clr-whte);
-  font-family: var(--ff-pri);
-}
-
-img {
-  max-width: 100%;
-}
-li,
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: var(--ff-sec);
-  font-size: var(--fs-xl);
-  font-weight: normal;
-  color: var(--clr-blck);
-  line-height: 1.1;
-}
-
-h2 {
-  font-family: var(--ff-sec);
-  font-size: var(--fs-l);
-  font-weight: 300;
-  color: var(--clr-blck);
-  line-height: 1.1;
-  margin: auto;
-  margin-top: var(--sp-l);
-}
-
-h3 {
-  font-family: var(--ff-sec);
-  color: var(--clr-blck);
-  margin-top: var(--sp-l);
-}
-
 .categoryflex {
   display: flex;
+  gap: var(--sp-m);
   flex-wrap: wrap;
   padding-top: var(--sp-m);
 }
 
 .categoryflex h2 {
-  width: 100px;
-  padding-left: 2vw;
-  margin-top: 0;
+  width: 300px;
+  /* padding-left: 2vw;
+  padding-bottom: 3vw;
+  margin-top: 0; */
   margin-left: 5vw;
+  font-size: var(--fs-l);
 }
 
 .categoryflex .categoryitemflex {
   display: flex;
-  justify-content: space-between;
 }
 
 .categoryflex .categoryitemflex p {
@@ -375,14 +372,42 @@ h3 {
 
 .categoryitems img {
   width: 60%;
+  max-width: 250px;
 }
 .categoryitems {
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posterwall {
+  position: relative;
+}
+
+.posterwallbtn {
+  background-color: rgba(255, 255, 255, 0.363);
+  border: solid 2px white;
+  width: fit-content;
+  height: fit-content;
+  padding: 3%;
+  position: absolute;
+  bottom: 5%;
+  left: center;
+  right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posterwallbtn p {
+  z-index: 10;
+  color: #000;
 }
 
 /* FOOTER */
 footer {
-  background-color: var(--clr-ter);
+  background-color: var(--clr-sec);
+  opacity: 75%;
   height: fit-content;
 }
 
