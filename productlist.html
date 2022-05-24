@@ -233,6 +233,66 @@
       </div>
     </header>
 
+    <!-- PRODUCT LIST PAGE -->
+    <div class="pageinfo">
+      <h2 class="productcategory">Posters</h2>
+      <ul class="pagelist">
+        <li><a href="index.html">Home</a></li>
+        <li>&#47;</li>
+        <li><a href="category.html">Posters</a></li>
+        <li>&#47;</li>
+        <li class="chosencat">20x20 Posters</li>
+      </ul>
+    </div>
+
+    <!-- FEATURED -->
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        Featured <img src="svg/arrowdown.svg" alt="arrowdown" />
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#best">Best Sellers</a>
+        <a href="#new">New Items</a>
+        <a href="#lowprice">Price, low to high</a>
+        <a href="#highprice">Price, high to low</a>
+      </div>
+    </div>
+
+    <!-- SIDE NAV -->
+    <div class="sidenav">
+      <p>Filter by</p>
+      <div class="sidenavs">
+        <a href="#">Type<img src="svg/arrowdown.svg" alt="arrowdown" /></a>
+      </div>
+      <div class="sidenavd">
+        <a href="#">Designer<img src="svg/arrowdown.svg" alt="arrowdown" /></a>
+      </div>
+    </div>
+
+    <!-- PAGE CONTENT -->
+
+    <main class="productlist">
+      <template class="productlistTemplate">
+        <article class="listproduct">
+          <div class="productimg">
+            <a href="productview.html">
+              <img class="img" src="img/example1.webp" alt="1"
+            /></a>
+          </div>
+          <div class="productinfo">
+            <div class="leftinfo">
+              <h3 class="name">Poster 1</h3>
+              <p class="artist">Emma</p>
+            </div>
+            <div class="rightinfo">
+              <p class="price"><span>300</span> DKK</p>
+            </div>
+          </div>
+        </article>
+      </template>
+    </main>
+    <button class="view">View More</button>
+
     <!-- FOOTER -->
     <footer>
       <div class="footergrid1">
