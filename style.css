@@ -266,7 +266,7 @@ li a {
     padding-left: 5rem;
   }
 
-  li a:hover {
+  /* li a:hover {
     border-bottom: black solid 1px;
     padding-bottom: 1.58rem;
   }
@@ -274,7 +274,7 @@ li a {
   li a:active {
     border-bottom: black solid 1px;
     padding-bottom: 1.58rem;
-  }
+  } */
 
   /* DROPDOWN */
 
@@ -288,16 +288,34 @@ li a {
     position: relative;
   }
 
-  .options {
-    padding-top: 3rem;
+  .options a {
+    position: relative;
   }
 
+  .shop-li a:hover,
+  .design-li a:hover,
+  .inspo-li a:hover,
+  .about-li a:hover {
+    border-bottom: black solid 2px;
+  }
+
+  .shop-li ul ul li a:hover,
+  .design-li ul li a:hover,
+  .inspo-li ul li a:hover,
+  .about-li ul li a:hover {
+    border: none;
+  }
+
+  .regularmenu li a {
+    padding-bottom: 1.7rem;
+  }
   .regularmenu ul ul.options {
     position: absolute;
     display: none;
     width: 100vw;
     background-color: var(--clr-whte);
     z-index: -1;
+    top: 3rem;
   }
 
   .regularmenu li:hover ul.options {
