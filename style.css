@@ -281,25 +281,48 @@ li a {
   .regularmenu ul {
     display: flex;
     gap: 2rem;
+    z-index: 100;
   }
   .regularmenu li {
     display: inline;
     position: relative;
   }
+
+  .options {
+    padding-top: 3rem;
+  }
+
   .regularmenu ul ul.options {
     position: absolute;
     display: none;
+    width: 100vw;
+    background-color: var(--clr-whte);
+    z-index: -1;
   }
+
   .regularmenu li:hover ul.options {
     display: flex;
     gap: 2rem;
+    margin-bottom: 1rem;
   }
   .regularmenu ul ul ul {
     position: absolute;
     display: none;
+    width: 100vw;
+    background-color: var(--clr-whte);
   }
   .regularmenu li:hover > ul {
-    display: block;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    grid-template-rows: repeat(5, 2rem);
+    grid-auto-flow: column;
+  }
+  .regularmenu .design-li:hover ul.options {
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(5, 2rem);
+    grid-auto-flow: column;
   }
 }
 
