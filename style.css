@@ -382,7 +382,63 @@ h3 {
 }
 
 /* PRODUCT LIST */
+/* FEATUREBOX */
+.dropbtn {
+  display: flex;
+  background-color: var(--clr-whte);
+  border: gray solid 2px;
+  padding: 0.8rem 1.6rem 0.8rem 1.2rem;
+  color: gray;
+  box-shadow: none;
+  cursor: pointer;
+  margin-right: 5.3rem;
+  margin-top: 3rem;
+}
 
+.dropbtn img {
+  max-width: 15px;
+}
+
+.dropbtn:hover {
+  background-color: #f1f1f1;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffffd5;
+  min-width: 150px;
+  z-index: 1;
+  line-height: 2rem;
+  right: 5.3rem;
+  top: 100%;
+  color: #1d1d1d;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  overflow: auto;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.show {
+  display: block;
+}
+
+/* PAGE CONTENT */
+.productcategory {
+  padding-bottom: 1rem;
+}
 .pageinfo {
   padding-top: var(--sp-l);
   padding-left: var(--sp-l);
@@ -398,7 +454,7 @@ h3 {
 }
 
 .productlist {
-  padding-top: var(--sp-l);
+  padding-top: var(--sp-m);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
   gap: 1.5rem;
@@ -445,17 +501,31 @@ h3 {
 @media screen and (min-width: 785px) {
   .sidenav {
     position: absolute;
-    padding-top: var(--sp-l);
+    padding-top: var(--sp-m);
     padding-left: var(--sp-m);
     height: 100%;
     width: 10rem;
     z-index: 1;
     display: block;
+    line-height: 2.5rem;
   }
-
+  .sidenav p {
+    text-decoration: underline;
+  }
   .sidenav a {
     display: flex;
     flex-direction: column;
+  }
+
+  .sidenav img {
+    width: 15px;
+  }
+
+  .sidenavs a,
+  .sidenavd a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
   }
 
   .productlist {
