@@ -39,6 +39,43 @@ a {
   color: #000;
 }
 
+body {
+  background-color: var(--clr-whte);
+  font-family: var(--ff-pri);
+}
+
+img {
+  max-width: 100%;
+}
+li,
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-xl);
+  font-weight: normal;
+  color: var(--clr-blck);
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--ff-sec);
+  font-size: var(--fs-l);
+  font-weight: 300;
+  color: var(--clr-blck);
+  line-height: 1.1;
+  margin: auto;
+  margin-top: var(--sp-l);
+}
+
+h3 {
+  font-family: var(--ff-sec);
+  color: var(--clr-blck);
+  margin-top: var(--sp-l);
+}
+
 /*HEADER*/
 /* SCROLL BANNER */
 #scrollBanner {
@@ -337,64 +374,24 @@ li a {
 
 /* FRONT PAGE */
 
-.body {
-  font-family: var(--ff-pri);
-  overflow-x: hidden;
-}
-
-body {
-  background-color: var(--clr-whte);
-  font-family: var(--ff-pri);
-}
-
-img {
-  max-width: 100%;
-}
-li,
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: var(--ff-sec);
-  font-size: var(--fs-xl);
-  font-weight: normal;
-  color: var(--clr-blck);
-  line-height: 1.1;
-}
-
-h2 {
-  font-family: var(--ff-sec);
-  font-size: var(--fs-l);
-  font-weight: 300;
-  color: var(--clr-blck);
-  line-height: 1.1;
-  margin: auto;
-  margin-top: var(--sp-l);
-}
-
-h3 {
-  font-family: var(--ff-sec);
-  color: var(--clr-blck);
-  margin-top: var(--sp-l);
-}
-
 .categoryflex {
   display: flex;
+  gap: var(--sp-m);
   flex-wrap: wrap;
   padding-top: var(--sp-m);
 }
 
 .categoryflex h2 {
-  width: 100px;
-  padding-left: 2vw;
-  margin-top: 0;
+  width: 300px;
+  /* padding-left: 2vw;
+  padding-bottom: 3vw;
+  margin-top: 0; */
   margin-left: 5vw;
+  font-size: var(--fs-l);
 }
 
 .categoryflex .categoryitemflex {
   display: flex;
-  justify-content: space-between;
 }
 
 .categoryflex .categoryitemflex p {
@@ -407,9 +404,111 @@ h3 {
 
 .categoryitems img {
   width: 60%;
+  max-width: 250px;
 }
 .categoryitems {
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posterwall {
+  position: relative;
+  margin-top: var(--sp-m);
+}
+
+.posterwallbtn {
+  background-color: rgba(255, 255, 255, 0.753);
+  border: solid 2px white;
+  width: fit-content;
+  height: fit-content;
+  padding: 3%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -108px;
+  margin-top: -19.5px;
+  cursor: pointer;
+}
+
+.posterwallbtn:hover {
+  background-color: rgba(255, 255, 255, 0.932);
+}
+
+.posterwallbtn p {
+  z-index: 10;
+  color: #000;
+  font-weight: 900;
+}
+
+.artistotweekflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artistotweek h2 {
+  padding-left: 5vw;
+}
+
+.artistotweekflex .lowerpic {
+  visibility: hidden;
+  position: absolute;
+  z-index: -5;
+}
+
+.artistotweekflex .upperpic {
+  min-width: 250px;
+  padding: 10%;
+}
+
+.artistotweekinfo {
+  width: 80%;
+  padding-bottom: 5vw;
+}
+
+.paddingfix {
+  padding-top: 5vw;
+}
+
+.remove {
+  position: absolute;
+  z-index: -5;
+  visibility: hidden;
+}
+
+.artistotweeksname {
+  margin: 0;
+  font-family: var(--ff-sec);
+  font-weight: 200;
+  font-size: var(--fs-l);
+}
+
+.artistotweekinfo a {
+  border-bottom: solid 1px black;
+}
+
+.artistotweekinfo p {
+  padding-bottom: 2vw;
+}
+
+.popularworks h3 {
+  font-family: var(--ff-pri);
+  font-weight: 200;
+  font-size: var(--fs-l);
+  padding-left: 5vw;
+}
+
+.popularworksgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.popularworksgrid img {
+  width: 80%;
+}
+
+.gridcontainer {
+  justify-self: center;
 }
 
 /* PRODUCT LIST */
@@ -585,7 +684,8 @@ h3 {
 
 /* FOOTER */
 footer {
-  background-color: var(--clr-ter);
+  background-color: var(--clr-sec);
+  opacity: 75%;
   height: fit-content;
   z-index: 10;
 }
@@ -651,4 +751,54 @@ footer .footergrid1 .SoMe a {
   border-radius: 3px;
   cursor: pointer;
   padding-top: 1.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .artistotweekflex .lowerpic {
+    visibility: visible;
+    z-index: 0;
+    position: absolute;
+    width: 70%;
+    left: 10%;
+    max-width: 300px;
+  }
+  .paddingfix {
+    visibility: hidden;
+    position: absolute;
+    z-index: -10;
+  }
+
+  .remove {
+    visibility: visible;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 2vw;
+  }
+  .dubblepic {
+    position: relative;
+    width: 60%;
+    height: 400px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .artistotweekflex .upperpic {
+    position: absolute;
+    width: 80%;
+    padding: 0;
+    left: 35%;
+    top: 40%;
+    max-width: 400px;
+  }
+  .artistotweekflex {
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .artistotweekinfo {
+    width: 40%;
+    padding-right: 12vw;
+  }
+
+  .artistotweekinfo p {
+    width: 120%;
+  }
 }
