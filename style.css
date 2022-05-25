@@ -568,6 +568,10 @@ input.input-text {
   font-weight: 900;
 }
 
+.artistotweek {
+  background-color: #f5f3f1;
+}
+
 .artistotweekflex {
   display: flex;
   flex-direction: column;
@@ -626,16 +630,55 @@ input.input-text {
   padding-left: 5vw;
 }
 
-.popularworksgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.popularworksflex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
 }
-.popularworksgrid img {
-  width: 80%;
+.popularworksflex img {
+  width: 100%;
+  max-width: 180px;
+  min-width: 122px;
+  cursor: pointer;
 }
 
-.gridcontainer {
+.flexcontainer {
   justify-self: center;
+}
+
+.aboutbox {
+  margin: 15vw;
+  border: solid black 2px;
+  padding: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutbox span {
+  font-size: var(--fs-l);
+}
+
+.aboutpic {
+  position: absolute;
+  z-index: -5;
+  visibility: hidden;
+}
+
+.newsletterbox {
+  color: white;
+  background-color: var(--clr-pri);
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+}
+
+.newsletterbox h2 {
+  color: white;
+  margin: 0;
 }
 
 /* PRODUCT LIST */
@@ -927,5 +970,22 @@ footer .footergrid1 .SoMe a {
 
   .artistotweekinfo p {
     width: 120%;
+  }
+  .aboutpic {
+    position: relative;
+    z-index: 0;
+    visibility: visible;
+    align-self: center;
+  }
+  .aboutkraess {
+    flex-direction: column;
+  }
+  .aboutbox {
+    margin: 3rem;
+    padding: 5vw;
+  }
+  .aboutkraess {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
