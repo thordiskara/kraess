@@ -580,6 +580,7 @@ input.input-text {
 
 .artistotweek h2 {
   padding-left: 5vw;
+  padding-top: 5vw;
 }
 
 .artistotweekflex .lowerpic {
@@ -636,7 +637,7 @@ input.input-text {
   flex-wrap: wrap;
   gap: 5vw;
   padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-bottom: 10vw;
 }
 .popularworksflex img {
   width: 100%;
@@ -728,6 +729,35 @@ input.input-text {
 
 .newsletterbox input::placeholder {
   color: rgb(206, 206, 206);
+}
+.followoninstagram h2 {
+  margin-left: 5vw;
+  font-size: var(--fs-l);
+}
+
+.followoninstagram h2 a {
+  font-weight: 400;
+}
+
+.followoninstagram p {
+  max-width: 400px;
+  padding-left: 5vw;
+  padding-top: 5vw;
+}
+
+.instagrampics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.instagrampics img {
+  min-width: 138px;
+  max-width: 250px;
+  cursor: pointer;
 }
 
 /* PRODUCT LIST */
