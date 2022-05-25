@@ -296,10 +296,7 @@ main#productView p {
   font-size: 0.9rem;
   font-weight: 300;
 }
-.artist-flex,
-.details-pv,
-.shipping-pv,
-.returns-pv {
+.artist-flex {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
@@ -310,8 +307,7 @@ main#productView p {
   font-weight: 400;
   font-size: 0.9rem;
 }
-.artist-flex button,
-.info-toggle-right button {
+.artist-flex button {
   border: none;
   background-color: transparent;
   width: 1.5rem;
@@ -390,18 +386,29 @@ input.input-text {
   display: flex;
   flex-direction: column;
 }
-.details-pv,
-.shipping-pv,
-.returns-pv {
+.collapsible {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background-color: transparent;
   border-bottom: solid 1px black;
 }
-.toggle-info {
-  display: none;
-  padding-bottom: 1rem;
+.collapsible img {
+  width: 1.5rem;
 }
-.coll-info {
+.coll-content {
   display: none;
   overflow: hidden;
+  padding: 1rem 0;
+}
+.active {
+  opacity: 0.9;
 }
 /* REGULAR MENU & MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
