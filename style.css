@@ -338,6 +338,14 @@ input.input-text {
   border: solid 1.5px black;
   background-color: white;
   margin-bottom: 2rem;
+  cursor: pointer;
+}
+.wishlist-button:hover {
+  border: solid 1.5px var(--clr-pri);
+  color: var(--clr-pri);
+}
+.quantity button:hover {
+  opacity: 0.8;
 }
 /* Collapsables and toggles PV */
 .info-toggle-right {
