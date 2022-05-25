@@ -240,7 +240,7 @@ li a {
   font-weight: 300;
   letter-spacing: 1px;
   position: relative;
-  padding-top: 3px 0;
+  padding-top: 3px;
   padding-left: 0.8rem;
 }
 
@@ -429,8 +429,22 @@ input.input-text {
   opacity: 1;
 }
 .coll-content p {
-  line-height: 1.5rem;
+  line-height: var(--fs-xxl);
 }
+
+/* related products */
+section.related-products {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--fs-m);
+}
+.related-p-carousel {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: var(--fs-s);
+}
+
 /* REGULAR MENU & MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
   .header {
@@ -978,7 +992,6 @@ footer .footergrid1 .SoMe a {
     border-bottom: none;
   }
   .about-designer {
-    height: 50vh;
     padding: var(--fs-s);
   }
   .about-designer h3 {
@@ -995,9 +1008,17 @@ footer .footergrid1 .SoMe a {
     display: flex;
     flex-direction: column;
     width: 55%;
-    height: 150vh;
   }
-  section.product-right {
-    height: 100vh;
+  /* related products */
+  section.related-products {
+    padding-top: 0;
+  }
+  .related-p-carousel {
+    display: flex;
+  }
+  .related-p-info {
+    padding: 0 var(--fs-s);
+    display: flex;
+    justify-content: space-between;
   }
 }
