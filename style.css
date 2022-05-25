@@ -673,12 +673,61 @@ input.input-text {
   background-color: var(--clr-pri);
   display: flex;
   justify-content: center;
-  padding: 5vw;
+  padding: 15vw;
+  flex-direction: column;
 }
 
-.newsletterbox h2 {
+.newslettertext {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletterbox .newslettertext h2 {
   color: white;
   margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.newsletterbox .newslettertext p {
+  padding-top: 15px;
+  text-align: center;
+}
+.newsletterbox form span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletterbox input.email {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  margin-top: 10px;
+  background-color: var(--clr-pri);
+  color: rgb(133, 133, 133);
+  border: none;
+}
+
+.newsletterbox input.signup {
+  background-color: var(--clr-pri);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.newsletterbox form {
+  border-bottom: 2px solid white;
+}
+
+.newsletterbox input::placeholder {
+  color: rgb(206, 206, 206);
 }
 
 /* PRODUCT LIST */
