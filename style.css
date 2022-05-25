@@ -1003,12 +1003,14 @@ footer .footergrid1 .SoMe a {
   .productWrap {
     display: flex;
     gap: var(--fs-xl);
+    max-height: 120vh;
   }
   section.product-left {
     display: flex;
     flex-direction: column;
     width: 55%;
   }
+
   /* related products */
   section.related-products {
     padding-top: 0;
