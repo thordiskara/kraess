@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="splide/dist/css/splide.min.css" />
   </head>
   <body>
     <header>
@@ -235,8 +236,93 @@
 
     <!-- FRONT PAGE -->
     <main class="frontpagecontent">
-      <img src="img/landingpage1pic.png" alt="landing-picture" />
-      <div class="categoryflex">
+      <div class="frontimg"></div>
+
+      <div class="shopcategories">
+        <section class="categories">
+          <h2>Shop by Category</h2>
+        </section>
+        <section
+          id="image-carousel"
+          class="splide"
+          aria-label="Beautiful Images"
+        >
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <img src="svg/arrowleft.svg" alt="left" />
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <img src="svg/arrowright.svg" alt=">" />
+            </button>
+          </div>
+
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <a href="index.html">
+                    <img src="img/example5.webp" alt="poster"
+                  /></a>
+                </div>
+                <div class="text">
+                  <a href="index.html"> <h4>Posters</h4></a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <a href="index.html">
+                    <img src="img/frame.webp" alt="frame"
+                  /></a>
+                </div>
+                <div class="text">
+                  <a href="index.html"> <h4>Frames</h4></a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <a href="index.html">
+                    <img src="img/ceramic.webp" alt="ceramic"
+                  /></a>
+                </div>
+                <div class="text">
+                  <a href="index.html"> <h4>Ceremics</h4></a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <a href="index.html">
+                    <img src="img/jewls.webp" alt="jewellery"
+                  /></a>
+                </div>
+                <div class="text">
+                  <a href="index.html"> <h4>Jewellery</h4></a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <a href="index.html">
+                    <img src="img/interior2.webp" alt="interior"
+                  /></a>
+                </div>
+                <div class="text">
+                  <a href="index.html"> <h4>Interior</h4></a>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <a href="index.html">
+                    <img src="img/accessories.webp" alt="accessories"
+                  /></a>
+                </div>
+                <div class="text">
+                  <a href="index.html"> <h4>Accessories</h4></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- <div class="categoryflex">
         <h2>Shop by Category</h2>
         <div class="categoryitemflex">
           <div class="categoryitems">
@@ -261,7 +347,7 @@
             <p>Posters</p>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="posterwall">
         <img src="img/poster.jpg" alt="Posterwall" />
         <div class="posterwallbtn">
@@ -423,6 +509,8 @@
         </div>
       </div>
     </footer>
+    <script src="splide/dist/js/splide.min.js"></script>
     <script src="main.js"></script>
+    <script src="carousel.js"></script>
   </body>
 </html>
