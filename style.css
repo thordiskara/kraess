@@ -45,9 +45,9 @@ body {
   font-family: var(--ff-pri);
 }
 
-img {
+/*img {
   max-width: 100%;
-}
+}*/
 li,
 a {
   text-decoration: none;
@@ -491,6 +491,41 @@ section.related-products {
   grid-template-columns: repeat(auto-fill, minmax(170px, 150px));
   gap: 8px;
   justify-content: center;
+}
+/*/////DESIGNER PAGE//////*/
+.designerPage {
+  padding: 6rem 3vw;
+}
+/*4 artworks at the top*/
+.artworks img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.artworks {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.designerInfo h3 {
+  padding: 2rem 0;
+  font-weight: 400;
+  text-align: center;
+}
+.designerInfo p {
+  line-height: 1.5rem;
+  padding: 0 1.2rem 0.6rem 1.2rem;
+}
+.picOfDesigner {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  padding-top: 1rem;
+}
+.quote {
+  background-color: #d3d2d2;
+  padding: 2rem 0;
 }
 
 /* REGULAR MENU & MEDIA QUERIES*/
@@ -936,12 +971,19 @@ section.related-products {
 .sidenav {
   display: none;
 }
+/*img styling*/
+.image {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+/*//////*/
 
 .productlist {
   padding-top: var(--sp-m);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 150px));
+  gap: 8px;
   justify-content: center;
   row-gap: 4rem;
 }
