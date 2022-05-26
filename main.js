@@ -6,6 +6,23 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
 });
 
+// SUBMENU
+function toggleSubArrow() {
+  console.log("Blaaaa");
+  var subMenu = document.querySelector(".submenu");
+  var arrow = document.querySelector(".nav-item .arrow");
+  if (subMenu.style.display === "flex") {
+    subMenu.style.display = "none";
+    arrow.src = "svg/arrowright.svg";
+  } else {
+    subMenu.style.display = "flex";
+    arrow.src = "svg/arrowdown.svg";
+  }
+}
+
+var arrowToggle = document.querySelector(".nav-item .arrow");
+arrowToggle.addEventListener("click", toggleSubArrow);
+
 /* FEATURE DROP DOWN */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");

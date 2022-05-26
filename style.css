@@ -275,6 +275,20 @@ li a {
   display: none;
 }
 
+.submenu {
+  display: none;
+  border-bottom: rgb(208, 208, 208) solid 0.8px;
+  flex-direction: column;
+  width: 100vw;
+  background-color: white;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 1.5rem 0 1.5rem 3rem;
+  line-height: 2.5rem;
+}
+
 /* PRODUCT VIEW */
 
 main#productView {
