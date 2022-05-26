@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Artist List Page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="splide/dist/css/splide.min.css" />
   </head>
   <body>
     <header>
@@ -53,10 +52,10 @@
         <nav class="regularmenu">
           <ul>
             <li class="shop-li">
-              <a href="#">Shop</a>
+              <a href="productlist.html">Shop</a>
               <ul class="options">
                 <li>
-                  <a href="#">Posters</a>
+                  <a href="productlist.html">Posters</a>
                   <ul>
                     <li><a href="productlist.html">20x20 Posters</a></li>
                     <li><a href="productlist.html">30x30 Posters</a></li>
@@ -222,7 +221,7 @@
 
         <a href="index.html" class="logo">
           <!-- <img class="logo" src="img/SILFEN-logo.png" alt="logo"
-        /> -->
+          /> -->
           <h1>kræss</h1>
         </a>
         <section class="icons">
@@ -233,261 +232,45 @@
         </section>
       </div>
     </header>
-
-    <!-- FRONT PAGE -->
-    <main class="frontpagecontent">
-      <div class="frontimg"></div>
-
-      <div class="shopcategories">
-        <section class="categories">
-          <h2>Shop by Category</h2>
-        </section>
-        <section
-          id="image-carousel"
-          class="splide"
-          aria-label="Beautiful Images"
-        >
-          <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev">
-              <img src="svg/arrowleft.svg" alt="left" />
-            </button>
-            <button class="splide__arrow splide__arrow--next">
-              <img src="svg/arrowright.svg" alt=">" />
-            </button>
-          </div>
-
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <a href="index.html">
-                    <img src="img/example5.webp" alt="poster"
-                  /></a>
-                </div>
-                <div class="text">
-                  <a href="index.html"> <h4>Posters</h4></a>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <a href="index.html">
-                    <img src="img/frame.webp" alt="frame"
-                  /></a>
-                </div>
-                <div class="text">
-                  <a href="index.html"> <h4>Frames</h4></a>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <a href="index.html">
-                    <img src="img/ceramic.webp" alt="ceramic"
-                  /></a>
-                </div>
-                <div class="text">
-                  <a href="index.html"> <h4>Ceremics</h4></a>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <a href="index.html">
-                    <img src="img/jewls.webp" alt="jewellery"
-                  /></a>
-                </div>
-                <div class="text">
-                  <a href="index.html"> <h4>Jewellery</h4></a>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <a href="index.html">
-                    <img src="img/interior2.webp" alt="interior"
-                  /></a>
-                </div>
-                <div class="text">
-                  <a href="index.html"> <h4>Interior</h4></a>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="splide__slide__container">
-                  <a href="index.html">
-                    <img src="img/accessories.webp" alt="accessories"
-                  /></a>
-                </div>
-                <div class="text">
-                  <a href="index.html"> <h4>Accessories</h4></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+    <main class="designers">
+      <!--<h2 class="designerHeader">Designers.</h2>-->
+      <div class="designerBreadcrumbs">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>&#47;</li>
+          <li><a class="current" href="designers.html">Designers</a></li>
+        </ul>
       </div>
+      <section class="extraPad">
+        <h3>MEET OUR DESIGNERS</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation est laborum. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+      </section>
 
-      <section class="posterwall">
-        <div class="posterwallimg">
-          <div class="posterwallbtn">
-            <p>Build your own posterwall</p>
+      <section class="designerListGrid">
+        <div class="designerContainer">
+          <img src="imgdesigners/blueiris.webp" alt="art by abi" />
+          <div>
+            <h4>Name Surname</h4>
+            <a href="designerpage.html">Learn more > </a>
+          </div>
+        </div>
+        <div class="designerContainer">
+          <img src="imgdesigners/almaGade.webp" alt="art by abi" />
+          <div>
+            <h4>Name Surname</h4>
+            <a href="designerpage.html">Learn more > </a>
           </div>
         </div>
       </section>
-
-      <div class="artistotweek">
-        <h2>Artist of the week</h2>
-        <div class="artistotweekflex">
-          <h3 class="artistotweeksname paddingfix">Julie Rask</h3>
-          <div class="dubblepic">
-            <img class="lowerpic" src="img/artistwork.png" alt="artist-work" />
-            <img class="upperpic" src="img/artist.png" alt="JulieRask" />
-          </div>
-          <div class="artistotweekinfo">
-            <h3 class="artistotweeksname remove">Julie Rask</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna.
-            </p>
-            <a href="#">Read more</a>
-          </div>
-        </div>
-        <div class="popularworks">
-          <h3>Popular Works</h3>
-
-          <div class="popularworksflex">
-            <div class="flexcontainer">
-              <img src="img/popularwork1.png" alt="popularwork1" />
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="gridcontainer">
-              <img src="img/popularwork2.png" alt="popularwork2" />
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="gridcontainer">
-              <img src="img/popularwork3.png" alt="popularworks" />
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="gridcontainer">
-              <img src="img/popularwork4.png" alt="popularwork4" />
-              <p>Lorem ipsum dolor</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="aboutkraess">
-        <div class="aboutbox">
-          <p>
-            <span>Kræss</span> is a interior design and art store where local
-            designer and their handmade designed are showcased and sold. The
-            vision is to reshape the customers relationship to the items they
-            buy and help them create a stronger bond to them.
-          </p>
-        </div>
-        <img class="aboutpic" src="img/pic-for-about-section.png" alt="pot" />
-      </div>
-      <div class="newsletterbox">
-        <div class="newslettertext">
-          <h2>Sign up for our newsletter!</h2>
-          <p>
-            Then you will be the first to get notified about our newest and most
-            popular designs.
-          </p>
-          <p>We send out 1-2 newsletters a month.</p>
-        </div>
-        <form action="index.html" name="email">
-          <span>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              class="email"
-            />
-            <input type="submit" value="Sign Up" class="signup" />
-          </span>
-        </form>
-      </div>
-      <div class="followoninstagram">
-        <h2>
-          Follow
-          <a href="https://www.instagram.com/kraess.store/" target="_blank"
-            >@kraess.store
-          </a>
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna.
-        </p>
-        <div class="instagrampics">
-          <a href="https://www.instagram.com/kraess.store/" target="_blank"
-            ><img src="img/somepic1.png" alt="somepic1"
-          /></a>
-          <a href="https://www.instagram.com/kraess.store/" target="_blank"
-            ><img src="img/somepic2.png" alt="somepic2"
-          /></a>
-          <a href="https://www.instagram.com/kraess.store/" target="_blank"
-            ><img src="img/somepic3.png" alt="somepic3"
-          /></a>
-          <a href="https://www.instagram.com/kraess.store/" target="_blank"
-            ><img src="img/somepic4.png" alt="somepic4"
-          /></a>
-        </div>
-      </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footergrid1">
-        <div class="footercontent">
-          <h3>Kræss Shop</h3>
-          <p>
-            Blågårdsgade 17<br />
-            Nørrebro, København<br />
-            Tel. (+45) 26848168<br />
-            kundeservice@kraess.dk<br />
-            CVR: 35695818
-          </p>
-          <a
-            href="https://www.google.com/maps/place/Bl%C3%A5g%C3%A5rdsgade+17a,+2200+K%C3%B8benhavn/@55.6867842,12.5565743,17z/data=!3m1!4b1!4m5!3m4!1s0x46525307702fa21d:0x276d961bb2e0a2fb!8m2!3d55.6867812!4d12.558763"
-            >View on Google Maps</a
-          >
-        </div>
-        <div class="footercontent">
-          <h3>Opening Hours</h3>
-          <p><span>Mon-Fre</span> 11:00-18:00</p>
-          <p><span>Sat</span> 11:00-17:00</p>
-          <p><span>Sun</span> Closed</p>
-        </div>
-        <div class="footercontent">
-          <h3>Info</h3>
-          <p>About Us</p>
-          <p>Terms & Conditions</p>
-          <p>Delivery & Return</p>
-          <p>Customer Service</p>
-          <p>Contact</p>
-          <p>FAQ</p>
-          <p>Sell Your Artwork</p>
-          <p>Gift Card</p>
-        </div>
-        <div class="social footercontent">
-          <h3>Social</h3>
-          <div class="SoMe">
-            <a href="https://www.facebook.com/kraess.store"
-              ><img src="img/facebook.png" alt="Facebook"
-            /></a>
-            <a href="https://www.instagram.com/kraess.store/"
-              ><img src="img/instagram.png" alt="Instagram"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <div class="footergrid2">
-        <p>&#169; Kræss 2022 // Love for danish designs</p>
-        <div class="paycards">
-          <img src="img/mastercard.png" alt="Mastercard" />
-          <img src="img/paypal.png" alt="PayPal" />
-          <img src="img/visa.png" alt="Visa" />
-        </div>
-      </div>
-    </footer>
-    <script src="splide/dist/js/splide.min.js"></script>
     <script src="main.js"></script>
-    <script src="carousel.js"></script>
   </body>
 </html>
