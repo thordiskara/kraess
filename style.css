@@ -67,13 +67,11 @@ h2 {
   color: var(--clr-blck);
   line-height: 1.1;
   margin: auto;
-  margin-top: var(--sp-l);
 }
 
 h3 {
   font-family: var(--ff-sec);
   color: var(--clr-blck);
-  margin-top: var(--sp-l);
 }
 
 /*HEADER*/
@@ -502,13 +500,14 @@ input.input-text {
 /* FRONT PAGE */
 
 .frontpagecontent .frontimg {
-  background-image: url(img/landingpage1pic.png);
+  background-image: url(img/livingroom.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   z-index: -1;
 }
+
 .shopcategories {
   display: grid;
   grid-template-columns: 30vw 70vw;
@@ -537,40 +536,24 @@ input.input-text {
   font-size: var(--fs-s);
 }
 
-/* .categoryflex {
-  display: flex;
-  gap: var(--sp-m);
-  flex-wrap: wrap;
-  padding-top: var(--sp-m);
+#image-carousel {
+  margin-top: 4rem;
 }
 
-.categoryflex h2 {
-  width: 300px;
-  margin-left: 5vw;
-  font-size: var(--fs-l);
-}
-
-.categoryflex .categoryitemflex {
-  display: flex;
-}
-
-.categoryflex .categoryitemflex p {
-  text-align: center;
-}
-
-.categoryitems img {
-  width: 60%;
-  max-width: 250px;
-}
-.categoryitems {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+/* POSTERWALL ON FRONTPAGE */
 
 .posterwall {
+  margin-top: 4rem;
+}
+
+.posterwallimg {
+  background-image: url(img/posterwall.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  z-index: -1;
   position: relative;
-  margin-top: var(--sp-m);
 }
 
 .posterwallbtn {
@@ -579,12 +562,11 @@ input.input-text {
   width: fit-content;
   height: fit-content;
   padding: 3%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -108px;
-  margin-top: -19.5px;
   cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  left: 40%;
+  top: 50%;
 }
 
 .posterwallbtn:hover {
@@ -609,7 +591,7 @@ input.input-text {
 
 .artistotweek h2 {
   padding-left: 5vw;
-  padding-top: 5vw;
+  padding-top: 8vw;
 }
 
 .artistotweekflex .lowerpic {
@@ -658,6 +640,7 @@ input.input-text {
   font-weight: 200;
   font-size: var(--fs-l);
   padding-left: 5vw;
+  padding-top: 5vw;
 }
 
 .popularworksflex {
@@ -760,6 +743,7 @@ input.input-text {
   color: rgb(206, 206, 206);
 }
 .followoninstagram h2 {
+  padding-top: 8vw;
   margin-left: 5vw;
   font-size: var(--fs-l);
 }
@@ -966,6 +950,7 @@ footer {
   opacity: 75%;
   height: fit-content;
   z-index: 10;
+  padding-top: var(--sp-l);
 }
 
 .footergrid1 {
