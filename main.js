@@ -94,3 +94,41 @@ function toggleArtistInfo() {
 }
 const arrowToggleArtist = document.querySelector(".toggle-info-artist");
 arrowToggleArtist.addEventListener("click", toggleArtistInfo);
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var icon = document.querySelector("img.product-arrow");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      icon.src = "svg/arrowdown.svg";
+    } else {
+      content.style.display = "block";
+      icon.src = "svg/arrowleft.svg";
+    }
+  });
+}
+
+/* parallax */
+const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+if (mediaQuery.matches) {
+  scrollDesk();
+}
+
+function scrollDesk() {
+  window.addEventListener("scroll", function () {
+    const target = this.document.querySelector(".product-left");
+    //const sticky = this.document.querySelector(".product-right");
+    console.log(window.pageYOffset);
+    var scrolled = window.pageYOffset;
+    var rate = scrolled * -0.5;
+    //var rateRight = scrolled * 0.1;
+    target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+    // sticky.style.transform = "translate3d(0px, " + rateRight + "px, 0px)";
+  });
+}
