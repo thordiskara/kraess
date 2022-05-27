@@ -6,22 +6,41 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
 });
 
-// SUBMENU
-function toggleSubArrow() {
-  console.log("Blaaaa");
-  var subMenu = document.querySelector(".submenu");
-  var arrow = document.querySelector(".nav-item .arrow");
-  if (subMenu.style.display === "flex") {
-    subMenu.style.display = "none";
-    arrow.src = "svg/arrowright.svg";
-  } else {
-    subMenu.style.display = "flex";
-    arrow.src = "svg/arrowdown.svg";
-  }
-}
+// SUBMENU - NOT WORKING
 
-var arrowToggle = document.querySelector(".nav-item .arrow");
-arrowToggle.addEventListener("click", toggleSubArrow);
+// var arrow = document.getElementsByClassName(".nav-item");
+// var i;
+
+// for (i = 0; i < arrow.length; i++) {
+//   console.log("Blaaaa");
+//   arrow[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     var subinfo = this.nextElementSibling;
+//     var icon = document.querySelector(".nav-item .arrow");
+//     if (subinfo.style.display === "flex") {
+//       subinfo.style.display = "none";
+//       icon.src = "svg/arrowdown.svg";
+//     } else {
+//       subinfo.style.display = "flex";
+//       icon.src = "svg/arrowleft.svg";
+//     }
+//   });
+// }
+// function toggleSubArrow() {
+//   console.log("Blaaaa");
+//   var subMenu = document.querySelector(".submenu");
+//   var arrow = document.querySelector(".nav-item .arrow");
+//   if (subMenu.style.display === "flex") {
+//     subMenu.style.display = "none";
+//     arrow.src = "svg/arrowright.svg";
+//   } else {
+//     subMenu.style.display = "flex";
+//     arrow.src = "svg/arrowdown.svg";
+//   }
+// }
+
+// var arrowToggle = document.querySelector(".nav-item .arrow");
+// arrowToggle.addEventListener("click", toggleSubArrow);
 
 /* FEATURE DROP DOWN */
 function myFunction() {
