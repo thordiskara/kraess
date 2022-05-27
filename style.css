@@ -1348,6 +1348,10 @@ footer .footergrid1 .SoMe a {
     visibility: visible;
     align-self: center;
   }
+
+  img.aboutpic {
+    max-width: 100%;
+  }
   .aboutkraess {
     flex-direction: column;
   }
@@ -1357,7 +1361,7 @@ footer .footergrid1 .SoMe a {
   }
   .aboutkraess {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50vw 50vw;
   }
 }
 
