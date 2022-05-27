@@ -631,12 +631,7 @@ section.related-products h3 {
   object-fit: contain;
 }
 
-.frontpagecontent .text {
-  text-align: center;
-  padding-top: 7rem;
-}
-
-.text {
+.slidetext {
   display: block;
   position: absolute;
   top: 55%;
@@ -647,11 +642,11 @@ section.related-products h3 {
   border: solid 2px white;
 }
 
-.text:hover {
+.slidetext:hover {
   background-color: rgba(255, 255, 255, 0.932);
 }
 
-.text h4 {
+.slidetext h4 {
   font-family: var(--ff-pri);
   font-size: var(--fs-s);
 }
@@ -1269,9 +1264,6 @@ footer .footergrid1 .SoMe a {
   .aboutkraess {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .posterwallbtn {
-    left: 40vw;
   }
 }
 
