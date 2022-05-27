@@ -463,9 +463,58 @@ section.related-products h3 {
   grid-template-columns: 50% 50%;
   gap: var(--fs-s);
 }
-.scroll-transparent {
-  background-color: #ffffff00;
+
+/*/////DESIGNER LIST PAGE//////*/
+.designers {
+  padding: 6rem 3vw;
 }
+.designerBreadcrumbs ul {
+  padding: 2rem 0 0 1rem;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.designerBreadcrumbs a:hover {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.243);
+  padding-bottom: 0.2rem;
+  transition: all 0.5s ease-in-out;
+}
+/*meet our deigners intro*/
+.designers h3 {
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 400;
+}
+.designers p {
+  padding: 0.5rem 1rem;
+  line-height: 1.5rem;
+}
+.extraPad {
+  padding: 1rem 0;
+}
+/*designer list grid*/
+.designerContainer img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+.designerContainer h4 {
+  padding: 0.3rem 0;
+  font-weight: 500;
+}
+.designerContainer a {
+  border-bottom: solid 1px rgb(0, 0, 0);
+  padding-bottom: 0.1rem;
+  font-size: 14px;
+}
+.designerListGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 150px));
+  gap: 8px;
+  justify-content: center;
+}
+
 /* REGULAR MENU & MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
   .header {
