@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product List Page</title>
+    <title>DesignerPage</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -221,7 +221,7 @@
 
         <a href="index.html" class="logo">
           <!-- <img class="logo" src="img/SILFEN-logo.png" alt="logo"
-        /> -->
+          /> -->
           <h1>kræss</h1>
         </a>
         <section class="icons">
@@ -232,122 +232,47 @@
         </section>
       </div>
     </header>
-
-    <!-- PRODUCT LIST PAGE -->
-    <div class="pageinfo">
-      <h2 class="productcategory">Posters</h2>
-      <ul class="pagelist">
-        <li><a href="index.html">Home</a></li>
-        <li>&#47;</li>
-        <li><a href="category.html">Posters</a></li>
-        <li>&#47;</li>
-        <li class="chosencat">20x20 Posters</li>
-      </ul>
-    </div>
-
-    <!-- FEATURED -->
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">
-        Featured <img src="svg/arrowdown.svg" alt="arrowdown" />
-      </button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#best">Best Sellers</a>
-        <a href="#new">New Items</a>
-        <a href="#lowprice">Price, low to high</a>
-        <a href="#highprice">Price, high to low</a>
+    <main class="designerPage">
+      <div class="designerBreadcrumbs">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>&#47;</li>
+          <li><a href="designers.html">Designers</a></li>
+          <li>&#47;</li>
+          <li><a class="current" href="#">Name Surname</a></li>
+        </ul>
       </div>
-    </div>
-
-    <!-- SIDE NAV -->
-    <div class="sidenav">
-      <p>Filter by</p>
-      <div class="sidenavs">
-        <a href="#">Type<img src="svg/arrowdown.svg" alt="arrowdown" /></a>
-      </div>
-      <div class="sidenavd">
-        <a href="#">Designer<img src="svg/arrowdown.svg" alt="arrowdown" /></a>
-      </div>
-    </div>
-
-    <!-- PAGE CONTENT -->
-
-    <main class="productlist">
-      <template class="productlistTemplate">
-        <article class="listproduct">
-          <div class="productimg">
-            <a href="productview.html">
-              <img class="img image" src="img/example1.webp" alt="1"
-            /></a>
-          </div>
-          <div class="productinfo">
-            <div class="leftinfo">
-              <h3 class="name">Poster 1</h3>
-              <p class="artist">Emma</p>
-            </div>
-            <div class="rightinfo">
-              <p class="price"><span>300</span> DKK</p>
-            </div>
-          </div>
-        </article>
-      </template>
+      <section class="artworks">
+        <img src="imgdesigners/blas.webp" alt="art by irit" />
+        <img src="imgdesigners/blas.webp" alt="art by irit" />
+        <img src="imgdesigners/blas.webp" alt="art by irit" />
+        <img src="imgdesigners/blas.webp" alt="art by irit" />
+      </section>
+      <section class="designerInfo">
+        <h3>NAME SURNAME</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
+      <img
+        class="picOfDesigner"
+        src="imgdesigners/blaspic.webp"
+        alt="the designers of blas"
+      />
+      <section class="quote">
+        <q>
+          HTML element indicates that the enclosed text is a short inline
+          quotation. Most modern browsers implement this by surrounding the text
+          in quotation marks.
+        </q>
+      </section>
     </main>
-    <button class="view">View More</button>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="footergrid1">
-        <div class="footercontent">
-          <h3>Kræss Shop</h3>
-          <p>
-            Blågårdsgade 17<br />
-            Nørrebro, København<br />
-            Tel. (+45) 26848168<br />
-            kundeservice@kraess.dk<br />
-            CVR: 35695818
-          </p>
-          <a
-            href="https://www.google.com/maps/place/Bl%C3%A5g%C3%A5rdsgade+17a,+2200+K%C3%B8benhavn/@55.6867842,12.5565743,17z/data=!3m1!4b1!4m5!3m4!1s0x46525307702fa21d:0x276d961bb2e0a2fb!8m2!3d55.6867812!4d12.558763"
-            >View on Google Maps</a
-          >
-        </div>
-        <div class="footercontent">
-          <h3>Opening Hours</h3>
-          <p><span>Mon-Fre</span> 11:00-18:00</p>
-          <p><span>Sat</span> 11:00-17:00</p>
-          <p><span>Sun</span> Closed</p>
-        </div>
-        <div class="footercontent">
-          <h3>Info</h3>
-          <p>About Us</p>
-          <p>Terms & Conditions</p>
-          <p>Delivery & Return</p>
-          <p>Customer Service</p>
-          <p>Contact</p>
-          <p>FAQ</p>
-          <p>Sell Your Artwork</p>
-          <p>Gift Card</p>
-        </div>
-        <div class="social footercontent">
-          <h3>Social</h3>
-          <div class="SoMe">
-            <a href="https://www.facebook.com/kraess.store"
-              ><img src="img/facebook.png" alt="Facebook"
-            /></a>
-            <a href="https://www.instagram.com/kraess.store/"
-              ><img src="img/instagram.png" alt="Instagram"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <div class="footergrid2">
-        <p>&#169; Kræss 2022 // Love for danish designs</p>
-        <div class="paycards">
-          <img src="img/mastercard.png" alt="Mastercard" />
-          <img src="img/paypal.png" alt="PayPal" />
-          <img src="img/visa.png" alt="Visa" />
-        </div>
-      </div>
-    </footer>
     <script src="main.js"></script>
   </body>
 </html>
