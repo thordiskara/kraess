@@ -306,6 +306,9 @@ main#productView p {
   line-height: 1.7rem;
   font-weight: 300;
 }
+main#productView img {
+  max-width: 100%;
+}
 .breadcrumb-productview {
   padding: 2rem 0;
   display: flex;
