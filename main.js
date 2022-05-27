@@ -63,21 +63,24 @@ function showProducts(productArray) {
   });
 }
 
-// function showSingleProduct(singleproduct) {
-//   console.log(singleproduct);
-//   document.querySelector(".name").textContent = singleproduct.title.rendered;
-//   document.querySelector(".price span").textContent = singleproduct.price;
-
-//   document.querySelector(".description").textContent = singleproduct.description;
-//   document.querySelector(".color").textContent = singleproduct.color;
-//   document.querySelector(".stock").textContent = singleproduct.stock;
-//   document.querySelector(".designerinfo").textContent =
-//     singleproduct.designer_info;
-//   document.querySelector(".img").src =
-//     singleproduct._embedded[
-//       "wp:featuredmedia"
-//     ][0].media_details.sizes.medium_large.source_url;
-// }
+function showSingleProduct(singleproduct) {
+  console.log(singleproduct);
+  document.querySelector(".product-name").textContent =
+    singleproduct.title.rendered;
+  document.querySelector(".price span").textContent = singleproduct.price;
+  document.querySelector(".product-artist").textContent =
+    singleproduct.designer;
+  document.querySelector(".description").textContent =
+    singleproduct.description;
+  document.querySelector(".color").textContent = singleproduct.color;
+  document.querySelector(".stock").textContent = singleproduct.stock;
+  document.querySelector(".designerinfo").textContent =
+    singleproduct.designer_info;
+  document.querySelector(".img").src =
+    singleproduct._embedded[
+      "wp:featuredmedia"
+    ][0].media_details.sizes.medium_large.source_url;
+}
 // PRODUCT VIEW PAGE //
 
 // toggle & collapsible //
