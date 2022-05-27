@@ -357,7 +357,7 @@ h4.price {
 .product-right h5 {
   font-weight: 500;
   padding-right: 0.5rem;
-  line-height: 1.2rem;
+  line-height: 1.7rem;
 }
 /* quantity and wishlist*/
 .quantity {
@@ -507,7 +507,7 @@ section.related-products h3 {
   }*/
   .regularmenu a:hover {
     border-bottom: solid 2px black;
-    transition: 0.15s ease-in-out;
+    transition: 0.12s ease-in-out;
   }
   .shop-li a,
   .design-li a,
@@ -654,7 +654,7 @@ section.related-products h3 {
   padding: 1.5rem;
   cursor: pointer;
   position: absolute;
-  left: 20%;
+  left: 25%;
   top: 45%;
 }
 
@@ -851,9 +851,10 @@ section.related-products h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 3rem;
-  padding-top: 5vw;
+  gap: 1rem;
+  padding-top: 10vh;
   padding-bottom: 5vw;
+  margin: 0 2rem;
 }
 
 .instagrampics img {
@@ -1174,6 +1175,9 @@ footer .footergrid1 .SoMe a {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .posterwallbtn {
+    left: 40vw;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1208,6 +1212,7 @@ footer .footergrid1 .SoMe a {
   }
   section.product-left img {
     width: 80%;
+    margin-left: var(--fs-xl);
   }
 
   /* parallax*/

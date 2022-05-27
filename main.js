@@ -102,13 +102,10 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    var icon = document.querySelector("img.product-arrow");
     if (content.style.display === "block") {
       content.style.display = "none";
-      icon.src = "svg/arrowdown.svg";
     } else {
       content.style.display = "block";
-      icon.src = "svg/arrowleft.svg";
     }
   });
 }
