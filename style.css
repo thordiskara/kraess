@@ -1111,6 +1111,18 @@ q {
   gap: 1rem;
 }
 
+.breadcrumb-productlist {
+  padding: 2rem 0;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.breadcrumb-productlist a:hover {
+  border-bottom: solid 1px rgb(0, 0, 0);
+  transition: 0.15s ease-in-out;
+}
+
 .sidenav {
   display: none;
 }
@@ -1119,6 +1131,15 @@ q {
   width: 100%;
   height: 290px;
   object-fit: cover;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  transition: transform 0.7s ease;
+}
+
+.productimg {
+  overflow: hidden;
 }
 /*//////*/
 

@@ -91,7 +91,7 @@ function showProducts(productArray) {
       .querySelector("a")
       .setAttribute("href", `productView.html?id=${product.id}`);
     copy.querySelector(".price span").textContent = product.price;
-    copy.querySelector(".img").src =
+    copy.querySelector(".image").src =
       product._embedded[
         "wp:featuredmedia"
       ][0].media_details.sizes.medium_large.source_url;
