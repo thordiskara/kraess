@@ -1102,7 +1102,7 @@ q {
   padding-bottom: 1rem;
 }
 .pageinfo {
-  padding-top: var(--sp-l);
+  padding-top: var(--sp-xl);
   padding-left: var(--sp-l);
 }
 
