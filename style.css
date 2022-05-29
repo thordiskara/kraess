@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
-
+@import url("https://use.typekit.net/oxk4hws.css");
 /* GENERAL STYLING */
 
 :root {
@@ -17,7 +17,7 @@
   --sp-xl: 8rem;
   --sp-xxl: 12rem;
 
-  --ff-pri: "Inter", sans-serif;
+  --ff-pri: neue-haas-unica, sans-serif;
   --ff-sec: "Inter", sans-serif;
 
   --fs-xs: 0.8rem;
@@ -62,8 +62,9 @@ h1 {
 }
 
 h2 {
-  font-family: var(--ff-sec);
-  font-size: var(--fs-l);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
   font-weight: 300;
   color: var(--clr-blck);
   line-height: 1.1;
@@ -212,7 +213,8 @@ li a {
 .logo h1 {
   font-size: var(--fs-l);
 }*/
-.mobileLogo {
+.mobileLogo,
+.mobileLogo1 {
   width: 6rem;
 }
 
@@ -590,6 +592,7 @@ q {
     display: flex;
     gap: 1rem;
     padding-left: 0;
+    font-weight: 300;
   }
   .mobileLogo,
   .mobileIcon {
@@ -602,7 +605,8 @@ q {
   .icons {
     padding-left: 5rem;
   }
-  img.logo {
+  img.logo,
+  img.mobileLogo1 {
     width: 10rem;
     margin-right: 10%;
   }
@@ -877,7 +881,7 @@ q {
 }
 
 .artistotweek h2 {
-  padding-left: 5vw;
+  text-align: center;
   padding-top: 8vw;
 }
 
@@ -888,7 +892,7 @@ q {
 }
 
 .artistotweekflex .upperpic {
-  min-width: 250px;
+  max-width: 100%;
   padding: 10%;
 }
 
@@ -975,6 +979,7 @@ q {
   justify-content: center;
   padding: 15vw;
   flex-direction: column;
+  line-height: 1.5rem;
 }
 
 .newslettertext {
@@ -985,9 +990,11 @@ q {
 
 .newsletterbox .newslettertext h2 {
   color: white;
+  line-height: 2.3rem;
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .newsletterbox .newslettertext p {
@@ -1393,6 +1400,10 @@ footer .footergrid1 .SoMe a {
   /* footer */
   .footergrid1 {
     margin-left: 5vw;
+  }
+  /* h2 */
+  h2 {
+    font-size: 2rem;
   }
   /* product view*/
   main#productView {
