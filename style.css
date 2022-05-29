@@ -511,12 +511,16 @@ section.related-products h3 {
 .designerListGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 150px));
-  gap: 8px;
+  gap: 0.7rem;
   justify-content: center;
 }
-/*/////DESIGNER PAGE//////*/
+/*/////DESIGNER PAGE //////*/
 .designerPage {
   padding: 6rem 0;
+  color: var(--clr-blck);
+}
+ul.ulPadding {
+  padding-left: 6vw;
 }
 /*4 artworks at the top*/
 .artworks img {
@@ -531,26 +535,56 @@ section.related-products h3 {
   gap: 0.7rem;
 }
 .designerInfo h3 {
-  padding: 2rem 0;
+  padding: 1rem 0;
   font-weight: 400;
   text-align: center;
 }
 .designerInfo p {
   line-height: 1.5rem;
-  padding: 0 1.2rem 0.6rem 1.2rem;
+  padding: 1rem 1.2rem 1.5rem 1.2rem;
 }
 .picOfDesigner {
   width: 100%;
   height: 450px;
   object-fit: cover;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 .quote {
   background-color: #f1f0f0;
   padding: 2rem;
+  font-weight: 300;
+  line-height: 2rem;
 }
 q {
   font-style: italic;
+}
+.moreDesigns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  padding: 2rem;
+}
+.moreDesigns img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.shopMore {
+  text-align: center;
+  padding-top: 2.2rem;
+}
+.shopMore h3 {
+  font-weight: 400;
+}
+.shopMoreInfo {
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.shopMoreInfo p {
+  padding: 0.2rem;
+}
+.shopMoreInfo p:first-child {
+  font-weight: 500;
 }
 
 /* REGULAR MENU & MEDIA QUERIES*/
@@ -1045,21 +1079,17 @@ q {
 .dropbtn {
   display: flex;
   background-color: var(--clr-whte);
-  border: gray solid 2px;
-  padding: 0.8rem 1.6rem 0.8rem 1.2rem;
-  color: gray;
+  border: rgb(0, 0, 0) solid 1.5px;
+  padding: 0.8rem 2.6rem 0.8rem 2rem;
+  color: rgb(0, 0, 0);
   box-shadow: none;
   cursor: pointer;
-  margin-right: 5.3rem;
+  margin-right: 1rem;
   margin-top: 3rem;
 }
 
 .dropbtn img {
   max-width: 15px;
-}
-
-.dropbtn:hover {
-  background-color: #f1f1f1;
 }
 .dropdown {
   position: relative;
@@ -1071,24 +1101,32 @@ q {
   display: none;
   position: absolute;
   background-color: #ffffffd5;
-  min-width: 150px;
+  min-width: 130px;
   z-index: 1;
   line-height: 2rem;
-  right: 5.3rem;
+  right: 1rem;
   top: 100%;
   color: #1d1d1d;
+  border: solid black;
+  border-top: none;
 }
 
 .dropdown-content a {
   color: black;
   text-decoration: none;
   display: flex;
-  justify-content: end;
-  width: 100%;
+  justify-content: start;
   overflow: auto;
+  font-size: 14px;
+  padding-left: 0.4rem;
+  border-bottom: solid black 1px;
+}
+.dropdown-content a:last-child {
+  border: none;
 }
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  border-bottom: solid 1px rgb(0, 0, 0);
+  transition: 0.15s ease-in-out;
 }
 .show {
   display: block;
@@ -1099,13 +1137,18 @@ q {
   padding-bottom: 1rem;
 }
 .pageinfo {
-  padding-top: var(--sp-l);
-  padding-left: var(--sp-l);
+  padding: 8.3rem 0 0 3.8rem;
+}
+.pageinfo li:hover {
+  border-bottom: solid 1px rgb(0, 0, 0);
+  transition: 0.15s ease-in-out;
 }
 
 .pageinfo ul {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .sidenav {
@@ -1146,21 +1189,14 @@ q {
 .view {
   display: block;
   margin: auto;
-  background-color: var(--clr-whte);
-  border: #878787 solid 2px;
+  background-color: white;
+  border: #000000 solid 2px;
   padding: 0.8rem 1.2rem;
-  color: var(--clr-gry);
+  color: black;
   box-shadow: none;
   margin-top: var(--sp-m);
   margin-bottom: var(--sp-m);
   cursor: pointer;
-}
-
-@media screen and (min-width: 425px) {
-  .productlist {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
-    row-gap: 3rem;
-  }
 }
 
 /* PRODUCT LIST DESKTOP*/
@@ -1195,8 +1231,14 @@ q {
   }
 
   .productlist {
-    margin-left: 10rem;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(370px, 150px));
+    padding-left: 13rem;
+  }
+
+  .image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
   }
 
   .productinfo {
@@ -1421,9 +1463,108 @@ footer .footergrid1 .SoMe a {
     display: flex;
     justify-content: space-between;
   }
+  /*/////DESIGNER LIST DESKTOP//////*/
+  /*top intro part*/
+  .extraPad {
+    padding-top: 2rem;
+    position: sticky;
+  }
+  .deisgnerListDesktop {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    padding-top: 2rem;
+  }
+
+  /*designer list grid */
+  .designerListGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 150px));
+  }
+
+  .designerContainer img {
+    height: 361px;
+  }
+
+  /*/////DESIGNER PAGE DESKTOP//////*/
+  /* top part*/
+  ul.ulPadding {
+    padding-left: 4vw;
+  }
+  .artworks img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .artworks {
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5% 45%;
+    grid-template-rows: 1fr 1fr;
+  }
+  .artworks img:nth-child(3) {
+    grid-row: 2;
+  }
+  .artworks img:nth-child(4) {
+    grid-column: 4;
+  }
+  .artworks img:nth-child(2) {
+    grid-column: 2 / span 2;
+  }
+
+  .designerGridDesktop {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .artworks {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+  }
+  .designerInfo {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 3;
+    padding-top: 10rem;
+    padding-right: 5rem;
+  }
+  .designerInfo h3 {
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+  }
+  .designerInfo p {
+    line-height: 1.7rem;
+  }
+  /*quote and img of deigner*/
+  .designerImgDesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 0;
+  }
+  .picOfDesigner {
+    background-color: #f1f0f0;
+    height: 600px;
+    padding: 0;
+  }
+  .quote {
+    font-size: 1.5rem;
+    padding: 6rem 4rem 0 5rem;
+    line-height: 3.5rem;
+  }
+
+  /*shop more designs*/
+  .moreDesigns {
+    display: flex;
+    padding-top: 4rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
   section.related-products {
     padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .quote {
+    font-size: 2rem;
+    padding: 9rem 5rem 0 7rem;
   }
 }
