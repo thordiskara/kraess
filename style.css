@@ -522,7 +522,7 @@ section.related-products h3 {
 .designerListGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 150px));
-  gap: 8px;
+  gap: 3vw;
   justify-content: center;
 }
 /*/////DESIGNER PAGE//////*/
@@ -1072,13 +1072,13 @@ q {
 /* FEATUREBOX */
 .dropbtn {
   display: flex;
-  background-color: var(--clr-whte);
-  border: gray solid 2px;
+  background-color: white;
+  border: rgb(0, 0, 0) solid 1px;
   padding: 0.8rem 1.6rem 0.8rem 1.2rem;
-  color: gray;
+  color: rgb(0, 0, 0);
   box-shadow: none;
   cursor: pointer;
-  margin-right: 5.3rem;
+  margin-right: 3vw;
   margin-top: 3rem;
 }
 
@@ -1086,9 +1086,9 @@ q {
   max-width: 15px;
 }
 
-.dropbtn:hover {
+/*.dropbtn:hover {
   background-color: #f1f1f1;
-}
+}*/
 .dropdown {
   position: relative;
   display: flex;
@@ -1102,7 +1102,7 @@ q {
   min-width: 150px;
   z-index: 1;
   line-height: 2rem;
-  right: 5.3rem;
+  right: 3vw;
   top: 100%;
   color: #1d1d1d;
 }
@@ -1111,7 +1111,7 @@ q {
   color: black;
   text-decoration: none;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   width: 100%;
   overflow: auto;
 }
@@ -1127,13 +1127,15 @@ q {
   padding-bottom: 1rem;
 }
 .pageinfo {
-  padding-top: var(--sp-xl);
-  padding-left: var(--sp-l);
+  padding: 7rem 7vw;
 }
 
 .pageinfo ul {
   display: flex;
-  gap: 1rem;
+  padding-top: 1.5rem;
+  font-size: 15px;
+  font-weight: 300;
+  gap: 0.5rem;
 }
 
 .breadcrumb-productlist {
@@ -1172,7 +1174,7 @@ q {
   padding-top: var(--sp-m);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 150px));
-  gap: 8px;
+  gap: 3vw;
   justify-content: center;
   row-gap: 4rem;
 }
