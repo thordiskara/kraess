@@ -1320,7 +1320,7 @@ footer .footergrid1 .SoMe a {
 }
 
 .paycards img {
-  border-radius: 3px;
+  width: 2.5rem;
   cursor: pointer;
   padding-top: 1.5rem;
 }
