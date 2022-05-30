@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="splide/dist/css/splide.min.css" />
   </head>
   <body>
-    <header>
+    <header id="landing-header">
       <!--<div id="scrollBanner">
         <div class="bannerFirst">Free shipping in Denmark</div>
         <div class="shippingBanner"><p>Shipping to: Denmark (DKK)</p></div>
@@ -74,7 +74,7 @@
         <nav class="regularmenu">
           <ul>
             <li class="shop-li">
-              <a href="#">Shop</a>
+              <a href="#" class="nav-first-options">Shop</a>
               <ul class="options">
                 <li>
                   <a href="#">Posters</a>
@@ -191,7 +191,7 @@
             </li>
 
             <li class="design-li">
-              <a href="designers.html">Designers</a>
+              <a href="designers.html" class="nav-designer">Designers</a>
               <ul class="options">
                 <li><a href="productlist.html">AE Keramik</a></li>
                 <li><a href="productlist.html">Albi Art</a></li>
@@ -207,7 +207,7 @@
             </li>
 
             <li class="inspo-li">
-              <a href="#">Inspiration</a>
+              <a href="#" class="nav-inspo">Inspiration</a>
               <ul class="options">
                 <li>
                   <a href="#">Posterwall</a>
@@ -222,7 +222,7 @@
             </li>
 
             <li class="about-li">
-              <a href="#">About</a>
+              <a href="#" class="nav-about">About</a>
               <ul class="options">
                 <li>
                   <a href="#">About Us</a>
@@ -240,16 +240,37 @@
             </li>
           </ul>
         </nav>
-
-        <a href="index.html" class="logo">
-          <img class="logo" src="svg-logo/logo-black.svg" alt="logo" />
+        <a href="index.html" class="mobileLogo">
+          <img class="mobileLogo" src="svg-logo/logo-black.svg" alt="logo" />
+        </a>
+        <a href="index.html" class="logo desktop">
+          <img class="logo" src="svg-logo/logo-white.svg" alt="logo" />
           <!-- <h1>kræss</h1>-->
         </a>
         <section class="icons">
-          <li class="iconx"><img src="svg/user.svg" alt="profile" /></li>
-          <li class="icon"><img src="svg/search.svg" alt="search" /></li>
-          <li class="iconx"><img src="svg/heart.svg" alt="heart" /></li>
-          <li class="icon"><img src="svg/bag.svg" alt="bag" /></li>
+          <li class="iconx">
+            <img src="svg/user/User_02.svg" alt="profile" class="userIcon" />
+          </li>
+          <li class="icon">
+            <img
+              src="svg/Search_Magnifying_Glass.svg"
+              alt="search"
+              class="searchIcon desktop"
+            />
+          </li>
+
+          <li class="icon mobileIcon">
+            <img src="svg/search.svg" alt="search" />
+          </li>
+          <li class="iconx">
+            <img src="svg/Heart_01.svg" alt="heart" class="heartIcon" />
+          </li>
+          <li class="icon desktop">
+            <img src="svg/Shopping_Bag_02.svg" alt="bag" class="bagIcon" />
+          </li>
+          <li class="icon mobileIcon">
+            <img src="svg/bag.svg" alt="bag" />
+          </li>
         </section>
       </div>
     </header>
@@ -490,10 +511,10 @@
           <h3>Social</h3>
           <div class="SoMe">
             <a href="https://www.facebook.com/kraess.store"
-              ><img src="img/facebook.png" alt="Facebook"
+              ><img src="svg/Facebook-Negative.svg" alt="Facebook"
             /></a>
             <a href="https://www.instagram.com/kraess.store/"
-              ><img src="img/instagram.png" alt="Instagram"
+              ><img src="svg/Instagram-Negative.svg" alt="Instagram"
             /></a>
           </div>
         </div>
@@ -501,9 +522,9 @@
       <div class="footergrid2">
         <p>&#169; Kræss 2022 // Love for danish designs</p>
         <div class="paycards">
-          <img src="img/mastercard.png" alt="Mastercard" />
-          <img src="img/paypal.png" alt="PayPal" />
-          <img src="img/visa.png" alt="Visa" />
+          <img src="svg/fa_cc-mastercard.svg" alt="Mastercard" />
+          <img src="svg/fa_cc-paypal.svg" alt="PayPal" />
+          <img src="svg/visa.svg" alt="Visa" />
         </div>
       </div>
     </footer>
