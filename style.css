@@ -186,11 +186,11 @@ header {
 .change .line-3 {
   transform: rotate(405deg) translate(-1.5px, -6px);
 }
-
 .icons {
   display: flex;
   gap: 1rem;
 }
+
 li {
   list-style: none;
 }
