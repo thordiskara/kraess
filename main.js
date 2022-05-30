@@ -91,7 +91,7 @@ function showProducts(productArray) {
       .querySelector("a")
       .setAttribute("href", `productView.html?id=${product.id}`);
     copy.querySelector(".price span").textContent = product.price;
-    copy.querySelector(".img").src =
+    copy.querySelector(".image").src =
       product._embedded[
         "wp:featuredmedia"
       ][0].media_details.sizes.medium_large.source_url;
@@ -101,18 +101,22 @@ function showProducts(productArray) {
 
 function showSingleProduct(singleproduct) {
   console.log(singleproduct);
-  document.querySelector(".product-name").textContent =
+  document.querySelector("h3.product-name").textContent =
+    singleproduct.title.rendered;
+  document.querySelector("a.product-name").textContent =
     singleproduct.title.rendered;
   document.querySelector(".price span").textContent = singleproduct.price;
   document.querySelector(".product-artist").textContent =
     singleproduct.designer;
   document.querySelector(".description").textContent =
     singleproduct.description;
-  document.querySelector(".color").textContent = singleproduct.color;
   document.querySelector(".stock").textContent = singleproduct.stock;
-  document.querySelector(".designerinfo").textContent =
+  document.querySelector(".about-designer .artist-info").textContent =
     singleproduct.designer_info;
-  document.querySelector(".img").src =
+  document.querySelector(".toggle-info .artist-info").textContent =
+    singleproduct.designer_info;
+  document.querySelector(".coll-details").textContent = singleproduct.details;
+  document.querySelector(".product-img").src =
     singleproduct._embedded[
       "wp:featuredmedia"
     ][0].media_details.sizes.medium_large.source_url;
