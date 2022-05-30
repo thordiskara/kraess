@@ -187,7 +187,11 @@ header {
 .change .line-3 {
   transform: rotate(405deg) translate(-1.5px, -6px);
 }
-.icons {
+/* .icons {
+  display: flex;
+  gap: 1rem;
+} */
+.icons ul {
   display: flex;
   gap: 1rem;
 }
@@ -404,6 +408,9 @@ input.input-text {
   border: solid 1px black;
 }
 .wishlist-button {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
   width: 100%;
   line-height: 2.2rem;
   border: solid 1.5px black;
@@ -411,9 +418,9 @@ input.input-text {
   margin-bottom: 2rem;
   cursor: pointer;
 }
+
 .wishlist-button:hover {
-  border: solid 1.5px var(--clr-pri);
-  color: var(--clr-pri);
+  opacity: 0.6;
   transition: all 0.2s ease-in-out;
 }
 .quantity button:hover {
@@ -424,10 +431,6 @@ input.input-text {
 .info-toggle-right {
   display: flex;
   flex-direction: column;
-}
-.info-toggle-right button:hover p {
-  border-bottom: solid 1px black;
-  transition: 0.15s ease;
 }
 .collapsible {
   display: flex;
