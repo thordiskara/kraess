@@ -108,6 +108,8 @@ function showSingleProduct(singleproduct) {
   document.querySelector(".price span").textContent = singleproduct.price;
   document.querySelector(".product-artist").textContent =
     singleproduct.designer;
+  document.querySelector(".product-artist.desktop").textContent =
+    singleproduct.designer;
   document.querySelector(".description").textContent =
     singleproduct.description;
   document.querySelector(".stock").textContent = singleproduct.stock;
