@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", init);
 function init(event) {
   let params = new URLSearchParams(document.location.search);
   let id = params.get("id");
-  let url = "https://thordiskara.com/wp_kraess/wp-json/wp/v2/product";
+  let url = "https://thordiskara.com/wp_kraess/wp-json/wp/v2/designer";
 
   if (id) {
     url += `/${id}`;
@@ -22,19 +22,16 @@ function init(event) {
   }
 }
 
-// Designer list designerListTemp
+// Designer list
 function showDesigners(designers) {
   console.log(designers);
   const template = document.querySelector(".designerListTemp").content;
   const parentElement = document.querySelector(".designerListGrid");
   designers.forEach((product) => {
     const copy = template.cloneNode(true);
-    copy.querySelector(".designerName").textContent = product.designer;
 
-    copy.querySelector(".designerContainer img").src =
-      product._embedded[
-        "wp:featuredmedia"
-      ][0].media_details.sizes.medium_large.source_url;
+    copy.querySelector(".designerName").textContent = product.title.rendered;
+    copy.querySelector(".designerContainer img").src = product.img1.guid;
     parentElement.appendChild(copy);
   });
 }
@@ -43,5 +40,6 @@ function showDesigners(designers) {
 
 function showSingleDesigner(singledesigner) {
   console.log(singledesigner);
-  document.querySelector(".designername").textContent = singledesigner.designer;
+  document.querySelector(".designerName").textContent =
+    singledesigner.title.rendered;
 }
