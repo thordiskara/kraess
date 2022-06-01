@@ -187,13 +187,14 @@ header {
 .change .line-3 {
   transform: rotate(405deg) translate(-1.5px, -6px);
 }
-/* .icons {
-  display: flex;
-  gap: 1rem;
-} */
+
 .icons ul {
   display: flex;
   gap: 1rem;
+}
+.icons img {
+  width: 1.7rem;
+  height: 2rem;
 }
 li {
   list-style: none;
@@ -213,8 +214,8 @@ li a {
 .logo h1 {
   font-size: var(--fs-l);
 }*/
-.mobileLogo,
-.mobileLogo1 {
+img.mobileLogo,
+img.mobileLogo1 {
   width: 6rem;
 }
 
@@ -600,7 +601,7 @@ q {
 /* REGULAR MENU & MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
   .header {
-    padding: 1rem 3rem;
+    padding: 0.8rem 3rem;
   }
 
   .burgercontainer {
@@ -618,9 +619,7 @@ q {
   .nav-designer {
     color: white;
   }
-  a.logo.desktop {
-    margin-right: 10%;
-  }
+
   .regularmenu ul {
     display: flex;
     gap: 1rem;
@@ -635,13 +634,10 @@ q {
     display: flex;
   }
 
-  .icons {
-    padding-left: 5rem;
-  }
   img.logo,
   img.mobileLogo1 {
-    width: 10rem;
-    margin-right: 10%;
+    width: 8rem;
+    margin-right: 8rem;
   }
   /* DROPDOWN */
 
@@ -673,7 +669,7 @@ q {
   .design-li a,
   .inspo-li a,
   .about-li a {
-    padding-bottom: 1.1rem;
+    padding-bottom: 1rem;
   }
   .regularmenu ul ul.options {
     position: absolute;
@@ -723,13 +719,19 @@ q {
   ul.acc-drpdwn {
     left: -34rem;
   }
-  ul.acc-drpdwn a,
+  /* ul.acc-drpdwn a,
   ul.interior-drpdwn a,
   ul.jewellery-drpdwn a,
   ul.ceramics-drpdwn a,
   ul.frames-drpdwn a,
   ul.posters-drpdwn a {
     padding-bottom: 0.2rem;
+  } */
+  .regularmenu li ul:last-of-type a {
+    padding-bottom: 0.8rem;
+  }
+  .regularmenu li ul ul:last-of-type a {
+    padding-bottom: 0.1rem;
   }
   .regularmenu li:hover > ul {
     padding: 1.5rem 1rem 1.5rem 5rem;
