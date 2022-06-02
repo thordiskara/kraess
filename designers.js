@@ -27,11 +27,11 @@ function showDesigners(designers) {
   console.log(designers);
   const template = document.querySelector(".designerListTemp").content;
   const parentElement = document.querySelector(".designerListGrid");
-  designers.forEach((product) => {
+  designers.forEach((designer) => {
     const copy = template.cloneNode(true);
 
-    copy.querySelector(".designerName").textContent = product.title.rendered;
-    copy.querySelector(".designerContainer img").src = product.img1.guid;
+    copy.querySelector(".designerName").textContent = designer.title.rendered;
+    copy.querySelector(".designerContainer img").src = designer.img1.guid;
     parentElement.appendChild(copy);
   });
 }
