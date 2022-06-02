@@ -125,7 +125,7 @@ function showSingleProduct(singleproduct) {
 }
 // PRODUCT VIEW PAGE //
 
-// toggle & collapsible //
+// TOGGLE & COLLAPSIBLE //
 function toggleArtistInfo() {
   var info = document.querySelector(".toggle-info");
   var icon = document.querySelector("img.product-arrow");
@@ -155,7 +155,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-/* parallax */
+/* PARALLAX */
 const mediaQuery = window.matchMedia("(min-width: 1024px)");
 
 if (mediaQuery.matches) {
@@ -165,12 +165,9 @@ if (mediaQuery.matches) {
 function scrollDesk() {
   window.addEventListener("scroll", function () {
     const target = this.document.querySelector(".product-left");
-    //const sticky = this.document.querySelector(".product-right");
     console.log(window.pageYOffset);
     var scrolled = window.pageYOffset;
     var rate = scrolled * -0.5;
-    //var rateRight = scrolled * 0.1;
     target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
-    // sticky.style.transform = "translate3d(0px, " + rateRight + "px, 0px)";
   });
 }
