@@ -511,13 +511,14 @@ section.related-products h3 {
   object-fit: cover;
 }
 .designerContainer h4 {
-  padding: 0.3rem 0;
   font-weight: 500;
 }
 .designerContainer a {
+  font-size: 14px;
+}
+.designerContainer a:hover {
   border-bottom: solid 1px rgb(0, 0, 0);
   padding-bottom: 0.1rem;
-  font-size: 14px;
 }
 .designerListGrid {
   display: grid;
@@ -1258,16 +1259,14 @@ q {
   .sidenav {
     position: absolute;
     padding-top: var(--sp-m);
-    padding-left: var(--sp-m);
+    padding-left: 4rem;
     height: 100%;
     width: 10rem;
     z-index: 1;
     display: block;
     line-height: 2.5rem;
   }
-  .sidenav p {
-    text-decoration: underline;
-  }
+
   .sidenav a {
     display: flex;
     flex-direction: column;
@@ -1530,23 +1529,38 @@ footer .footergrid1 .SoMe a {
   /*/////DESIGNER LIST DESKTOP//////*/
   /*top intro part*/
   .extraPad {
-    padding-top: 2rem;
-    position: sticky;
-  }
-  .deisgnerListDesktop {
+    padding-left: 1rem;
     display: grid;
-    grid-template-columns: 30% 1fr;
-    padding-top: 2rem;
+    grid-template-columns: 50% 50%;
+  }
+  .extraPad h3 {
+    text-align: left;
+  }
+  .extraPad p {
+    grid-column: 1;
   }
 
+  .deisgnerListDesktop {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    padding-top: 2rem;
+  }
+  .padRemove {
+    padding: 0 0 0 1rem;
+  }
   /*designer list grid */
   .designerListGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 150px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 150px));
+    grid-column: 2;
+    gap: 1rem;
   }
 
   .designerContainer img {
     height: 361px;
+  }
+  .designers p {
+    padding: 0;
   }
 
   /*/////DESIGNER PAGE DESKTOP//////*/
