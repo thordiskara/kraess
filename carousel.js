@@ -35,7 +35,7 @@ const search = document.querySelector(".searchIcon");
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
-  if (currentScroll >= 100) {
+  if (currentScroll >= 50) {
     header.style.background = "white";
     logo.src = "svg-logo/logo-black.svg";
     shopNav.style.color = "black";
