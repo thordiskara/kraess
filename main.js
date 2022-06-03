@@ -25,22 +25,24 @@ menuIcon.addEventListener("click", () => {
 //       icon.src = "svg/arrowleft.svg";
 //     }
 //   });
-// }
-// function toggleSubArrow() {
-//   console.log("Blaaaa");
-//   var subMenu = document.querySelector(".submenu");
-//   var arrow = document.querySelector(".nav-item .arrow");
-//   if (subMenu.style.display === "flex") {
-//     subMenu.style.display = "none";
-//     arrow.src = "svg/arrowright.svg";
-//   } else {
-//     subMenu.style.display = "flex";
-//     arrow.src = "svg/arrowdown.svg";
-//   }
-// }
 
-// var arrowToggle = document.querySelector(".nav-item .arrow");
-// arrowToggle.addEventListener("click", toggleSubArrow);
+// var arrowToggle = document.querySelectorAll(".nav-item .arrow");
+// arrowToggle.addEventListener("click", toggleAll);
+
+// function toggleAll(arrowToggle) {
+//   arrowToggle.forEach(() => {
+//     console.log("Blaaaa");
+//     var subMenu = document.querySelector(".submenu");
+//     var arrow = document.querySelector(".nav-item .arrow");
+//     if (subMenu.style.display === "flex") {
+//       subMenu.style.display = "none";
+//       arrow.src = "svg/arrowright.svg";
+//     } else {
+//       subMenu.style.display = "flex";
+//       arrow.src = "svg/arrowdown.svg";
+//     }
+//   });
+// }
 
 /* FEATURE DROP DOWN */
 function myFunction() {
@@ -101,6 +103,8 @@ function showProducts(productArray) {
 
 function showSingleProduct(singleproduct) {
   console.log(singleproduct);
+  document.querySelector("title.pageTitle").textContent =
+    singleproduct.title.rendered;
   document.querySelector("h3.product-name").textContent =
     singleproduct.title.rendered;
   document.querySelector("a.product-name").textContent =
@@ -125,7 +129,7 @@ function showSingleProduct(singleproduct) {
 }
 // PRODUCT VIEW PAGE //
 
-// toggle & collapsible //
+// TOGGLE & COLLAPSIBLE //
 function toggleArtistInfo() {
   var info = document.querySelector(".toggle-info");
   var icon = document.querySelector("img.product-arrow");
@@ -155,7 +159,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-/* parallax */
+/* PARALLAX */
 const mediaQuery = window.matchMedia("(min-width: 1024px)");
 
 if (mediaQuery.matches) {
@@ -165,12 +169,9 @@ if (mediaQuery.matches) {
 function scrollDesk() {
   window.addEventListener("scroll", function () {
     const target = this.document.querySelector(".product-left");
-    //const sticky = this.document.querySelector(".product-right");
     console.log(window.pageYOffset);
     var scrolled = window.pageYOffset;
     var rate = scrolled * -0.5;
-    //var rateRight = scrolled * 0.1;
     target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
-    // sticky.style.transform = "translate3d(0px, " + rateRight + "px, 0px)";
   });
 }

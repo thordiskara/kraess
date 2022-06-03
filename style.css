@@ -68,7 +68,6 @@ h2 {
   font-weight: 300;
   color: var(--clr-blck);
   line-height: 1.1;
-  margin: auto;
 }
 
 h3 {
@@ -355,7 +354,7 @@ main#productView img {
   padding-bottom: 1rem;
 }
 p.coll-details {
-  max-width: 150px;
+  max-width: 200px;
 }
 section.product-left {
   border-bottom: solid 1px rgba(0, 0, 0, 0.691);
@@ -720,6 +719,7 @@ q {
   ul.acc-drpdwn {
     left: -34rem;
   }
+
   /* ul.acc-drpdwn a,
   ul.interior-drpdwn a,
   ul.jewellery-drpdwn a,
@@ -744,17 +744,18 @@ q {
     grid-column-gap: 2rem;
   }
   .regularmenu .design-li:hover ul.options {
-    display: grid;
-    grid-template-columns: repeat(3, 10rem);
-    grid-template-rows: repeat(5, 2rem);
-    grid-auto-flow: column;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .regularmenu .design-li:hover ul.options a {
+    padding-left: 1rem;
   }
 }
 
 /* FRONT PAGE */
 
 .frontpagecontent .frontimg {
-  background-image: url(img/livingroom.jpeg);
+  background-image: url(imginstagram/284732961_428707395749465_4153703452803513017_n.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -783,7 +784,7 @@ q {
 .slidetext {
   display: block;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 37.5%;
   padding: 1rem 2rem;
   color: white;
@@ -796,8 +797,8 @@ q {
 }
 
 .slidetext h4 {
-  font-family: var(--ff-pri);
-  font-size: var(--fs-s);
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 #image-carousel {
@@ -859,7 +860,7 @@ q {
 }
 
 .posterwallimg {
-  background-image: url(img/posterwall.webp);
+  background-image: url(img/poster.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -887,7 +888,7 @@ q {
 .posterwallbtn p {
   z-index: 10;
   color: #000;
-  font-weight: 900;
+  font-weight: 400;
 }
 @media screen and (min-width: 625px) {
   .posterwallbtn {
@@ -897,6 +898,7 @@ q {
 @media screen and (min-width: 800px) {
   .posterwallbtn {
     left: 35%;
+    font-size: 1.5rem;
   }
 }
 
@@ -960,6 +962,7 @@ q {
 
 .artistotweekinfo p {
   padding-bottom: 2vw;
+  line-height: 1.7rem;
 }
 
 .popularworks h3 {
@@ -969,20 +972,12 @@ q {
   padding-left: 5vw;
   padding-top: 5vw;
 }
-
-.popularworksflex {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 5vw;
-  padding-top: 5vw;
-  padding-bottom: 10vw;
+.popularworks {
+  padding: 0 2rem;
 }
-.popularworksflex img {
-  width: 100%;
-  max-width: 180px;
-  min-width: 122px;
-  cursor: pointer;
+
+.smalerImage {
+  width: 90%;
 }
 
 .flexcontainer {
@@ -990,12 +985,11 @@ q {
 }
 
 .aboutbox {
-  margin: 15vw;
   padding: 8vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   line-height: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
 }
 
 .aboutbox span {
@@ -1073,8 +1067,7 @@ q {
   color: rgb(206, 206, 206);
 }
 .followoninstagram h2 {
-  padding-top: 8vw;
-  margin-left: 5vw;
+  padding: 8vw;
   font-size: var(--fs-l);
 }
 
@@ -1082,26 +1075,28 @@ q {
   font-weight: 400;
 }
 
-.followoninstagram p {
-  max-width: 400px;
-  padding-left: 5vw;
-  padding-top: 5vw;
-}
-
 .instagrampics {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
-  padding-top: 10vh;
-  padding-bottom: 5vw;
-  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.instagrampics a {
+  text-decoration: none;
 }
 
 .instagrampics img {
-  min-width: 138px;
-  max-width: 250px;
+  width: 100%;
+  object-fit: contain;
   cursor: pointer;
+}
+.hideInsta {
+  display: none;
+}
+.plusSign {
+  max-width: 7%;
+  grid-column: 1 / span 2;
+  justify-items: center;
+  justify-self: center;
+  margin: 1rem;
 }
 
 /* PRODUCT LIST */
@@ -1155,8 +1150,7 @@ q {
   border: none;
 }
 .dropdown-content a:hover {
-  border-bottom: solid 1px rgb(0, 0, 0);
-  transition: 0.15s ease-in-out;
+  background-color: var(--clr-whte);
 }
 .show {
   display: block;
@@ -1284,7 +1278,7 @@ q {
   }
 
   .productlist {
-    grid-template-columns: repeat(auto-fill, minmax(370px, 150px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 150px));
     padding-left: 13rem;
   }
 
@@ -1316,7 +1310,6 @@ q {
 /* FOOTER */
 footer {
   background-color: var(--clr-sec);
-  opacity: 75%;
   height: fit-content;
   z-index: 10;
   padding-top: var(--sp-s);
@@ -1330,7 +1323,6 @@ footer {
   flex-wrap: wrap;
   margin-left: 10vw;
   padding-bottom: 2rem;
-  border-bottom: 0.5px solid black;
 }
 
 .footergrid1 p {
@@ -1434,11 +1426,11 @@ footer .footergrid1 .SoMe a {
   }
   .artistotweekinfo {
     width: 40%;
-    padding-right: 12vw;
+    padding-right: 4vw;
   }
 
   .artistotweekinfo p {
-    width: 120%;
+    width: 100%;
   }
   .aboutpic {
     position: relative;
@@ -1454,7 +1446,6 @@ footer .footergrid1 .SoMe a {
     flex-direction: column;
   }
   .aboutbox {
-    margin: 3rem;
     padding: 5vw;
   }
   .aboutkraess {
@@ -1465,9 +1456,24 @@ footer .footergrid1 .SoMe a {
 
 @media only screen and (min-width: 768px) {
   /* footer */
-  .footergrid1 {
-    margin-left: 5vw;
+  .footergrid1 p {
+    font-size: 0.9rem;
   }
+  .footergrid2 {
+    padding-left: 5vw;
+  }
+  .footergrid1 a {
+    font-size: 0.9rem;
+  }
+
+  .newsletterbox {
+    gap: 3rem;
+    padding: 7rem;
+  }
+  .newsletterbox h2 {
+    padding: 1rem 0;
+  }
+
   /* h2 */
   h2 {
     font-size: 2rem;
@@ -1476,6 +1482,29 @@ footer .footergrid1 .SoMe a {
   main#productView {
     padding: 6rem var(--sp-l);
   }
+
+  /*instagram pictures front page desktop*/
+
+  .hideInsta {
+    display: block;
+  }
+
+  .instagrampics {
+    padding: 0 3rem 5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .instaOne {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .plusSign {
+    padding: 1rem;
+    width: 6%;
+    grid-column: 1 / span 5;
+  }
+
   /* desktop display and fixes */
   .desktop,
   .artist-info {
@@ -1509,7 +1538,7 @@ footer .footergrid1 .SoMe a {
   .productWrap {
     display: flex;
     gap: var(--fs-l);
-    max-height: 120vh;
+    max-height: 200vh;
   }
   section.product-left {
     display: flex;
