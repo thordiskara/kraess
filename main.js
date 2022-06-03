@@ -103,6 +103,8 @@ function showProducts(productArray) {
 
 function showSingleProduct(singleproduct) {
   console.log(singleproduct);
+  document.querySelector("title.pageTitle").textContent =
+    singleproduct.title.rendered;
   document.querySelector("h3.product-name").textContent =
     singleproduct.title.rendered;
   document.querySelector("a.product-name").textContent =
