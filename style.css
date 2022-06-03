@@ -68,7 +68,6 @@ h2 {
   font-weight: 300;
   color: var(--clr-blck);
   line-height: 1.1;
-  margin: auto;
 }
 
 h3 {
@@ -756,7 +755,7 @@ q {
 /* FRONT PAGE */
 
 .frontpagecontent .frontimg {
-  background-image: url(img/livingroom.jpeg);
+  background-image: url(imginstagram/284732961_428707395749465_4153703452803513017_n.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1080,10 +1079,13 @@ q {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.instagrampics a {
+  text-decoration: none;
+}
 
 .instagrampics img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
 }
 .hideInsta {
@@ -1488,7 +1490,7 @@ footer .footergrid1 .SoMe a {
   }
 
   .instagrampics {
-    padding: 0 4rem;
+    padding: 0 3rem 5rem 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
