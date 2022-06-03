@@ -26,21 +26,23 @@ menuIcon.addEventListener("click", () => {
 //     }
 //   });
 
-function toggleSubArrow() {
-  console.log("Blaaaa");
-  var subMenu = document.querySelector(".submenu 1, .submenu 2");
-  var arrow = document.querySelector(".nav-item .arrow");
-  if (subMenu.style.display === "flex") {
-    subMenu.style.display = "none";
-    arrow.src = "svg/arrowright.svg";
-  } else {
-    subMenu.style.display = "flex";
-    arrow.src = "svg/arrowdown.svg";
-  }
-}
+// var arrowToggle = document.querySelectorAll(".nav-item .arrow");
+// arrowToggle.addEventListener("click", toggleAll);
 
-var arrowToggle = document.querySelector(".nav-item .arrow");
-arrowToggle.addEventListener("click", toggleSubArrow);
+// function toggleAll(arrowToggle) {
+//   arrowToggle.forEach(() => {
+//     console.log("Blaaaa");
+//     var subMenu = document.querySelector(".submenu");
+//     var arrow = document.querySelector(".nav-item .arrow");
+//     if (subMenu.style.display === "flex") {
+//       subMenu.style.display = "none";
+//       arrow.src = "svg/arrowright.svg";
+//     } else {
+//       subMenu.style.display = "flex";
+//       arrow.src = "svg/arrowdown.svg";
+//     }
+//   });
+// }
 
 /* FEATURE DROP DOWN */
 function myFunction() {
