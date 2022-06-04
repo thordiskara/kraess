@@ -334,6 +334,10 @@ img.mobileLogo1 {
   margin-top: 15rem;
 }
 
+.carousel-item a:hover {
+  background-color: rgba(255, 255, 255, 0.932);
+}
+
 .carousel-hero .visible {
   display: grid;
   animation: fadeVisibility 0.5s;
