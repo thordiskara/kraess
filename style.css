@@ -573,7 +573,7 @@ q {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 1rem;
-  padding: 2rem;
+  padding-bottom: 2rem;
 }
 .moreDesigns img {
   max-width: 100%;
@@ -751,28 +751,44 @@ q {
     padding-left: 1rem;
   }
 }
+/*note end of mediaqurrie*/
 
 /* FRONT PAGE */
 
 .frontpagecontent .frontimg {
-  background-image: url(imginstagram/284732961_428707395749465_4153703452803513017_n.jpg);
+  background-image: url(img/whiteglasvase.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   z-index: -1;
+  position: relative;
+}
+.frontimg a {
+  position: absolute;
+  z-index: 1;
+  place-self: center;
+  background-color: rgba(255, 255, 255, 0.753);
+  padding: 1rem;
+}
+.frontimg {
+  display: grid;
+}
+.frontimg a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .shopcategories {
   display: flex;
   flex-direction: column;
+  padding-bottom: 4rem;
 }
 
 .categories {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .splide__slide img {
@@ -784,12 +800,12 @@ q {
 .slidetext {
   display: block;
   position: absolute;
-  top: 50%;
-  left: 37.5%;
+  top: 44%;
+  left: 34%;
   padding: 1rem 2rem;
   color: white;
   background-color: rgba(255, 255, 255, 0.753);
-  border: solid 2px white;
+  /*border: solid 2px white;*/
 }
 
 .slidetext:hover {
@@ -802,7 +818,7 @@ q {
 }
 
 #image-carousel {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .splide__arrows button {
@@ -816,6 +832,42 @@ q {
 .splide__pagination__page {
   visibility: hidden;
 }
+
+/*Gift ideas front page*/
+
+.giftIdeas {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+
+  padding: 0 3rem 2rem 3rem;
+}
+
+.giftHeading {
+  text-align: center;
+  padding: 1.5rem;
+}
+.gifts {
+  position: relative;
+  display: grid;
+}
+
+.gifts img {
+  max-width: 100%;
+  height: 100%;
+}
+.gifts a {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.753);
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  place-self: center;
+}
+.gifts a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 @media screen and (min-width: 600px) {
   .splide__slide img {
     width: 100%;
@@ -844,6 +896,7 @@ q {
   .shopcategories {
     display: grid;
     grid-template-columns: 30vw 70vw;
+    padding-bottom: 0;
   }
   .categories {
     display: flex;
@@ -855,29 +908,22 @@ q {
 
 /* POSTERWALL ON FRONTPAGE */
 
-.posterwall {
-  margin-top: 4rem;
-}
-
 .posterwallimg {
-  background-image: url(img/poster.jpg);
+  background-image: url(img/posterbig.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 70vh;
   position: relative;
 }
 
 .posterwallbtn {
   background-color: rgba(255, 255, 255, 0.753);
-  border: none;
-  width: fit-content;
-  height: fit-content;
   padding: 1.5rem;
   cursor: pointer;
-  position: relative;
-  left: 28%;
-  top: 50%;
+  position: absolute;
+  left: 23%;
+  top: 45%;
   cursor: pointer;
 }
 
@@ -885,11 +931,6 @@ q {
   background-color: rgba(255, 255, 255, 0.932);
 }
 
-.posterwallbtn p {
-  z-index: 10;
-  color: #000;
-  font-weight: 400;
-}
 @media screen and (min-width: 625px) {
   .posterwallbtn {
     left: 32%;
@@ -900,6 +941,9 @@ q {
     left: 35%;
     font-size: 1.5rem;
   }
+  .posterwallimg {
+    height: 80vh;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -907,6 +951,7 @@ q {
     left: 38%;
   }
 }
+/*///front page////*/
 
 .artistotweek {
   background-color: #f5f3f1;
@@ -971,9 +1016,14 @@ q {
   font-size: var(--fs-l);
   padding-left: 5vw;
   padding-top: 5vw;
+  padding-bottom: 3vh;
 }
 .popularworks {
   padding: 0 2rem;
+}
+
+.popularworks section p {
+  text-align: left;
 }
 
 .smalerImage {
@@ -1066,6 +1116,8 @@ q {
 .newsletterbox input::placeholder {
   color: rgb(206, 206, 206);
 }
+
+/*INSTAGRAM GRID*/
 .followoninstagram h2 {
   padding: 8vw;
   font-size: var(--fs-l);
@@ -1085,7 +1137,7 @@ q {
 
 .instagrampics img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
   cursor: pointer;
 }
 .hideInsta {
@@ -1385,6 +1437,7 @@ footer .footergrid1 .SoMe a {
 }
 
 @media only screen and (min-width: 700px) {
+  /*artist of the week desktop*/
   .artistotweekflex .lowerpic {
     visibility: visible;
     z-index: 0;
@@ -1432,6 +1485,15 @@ footer .footergrid1 .SoMe a {
   .artistotweekinfo p {
     width: 100%;
   }
+  .popularworks {
+    padding: 0 3rem 0 5rem;
+  }
+  .popularworks h3 {
+    padding-bottom: 0;
+  }
+  .smalerImage {
+    width: 80%;
+  }
   .aboutpic {
     position: relative;
     z-index: 0;
@@ -1451,6 +1513,16 @@ footer .footergrid1 .SoMe a {
   .aboutkraess {
     display: grid;
     grid-template-columns: 50vw 50vw;
+  }
+
+  /*gift ideas desktop*/
+
+  .giftIdeas {
+    display: flex;
+    padding-bottom: 4rem;
+  }
+  .giftHeading {
+    padding: 3rem 0;
   }
 }
 
@@ -1497,12 +1569,26 @@ footer .footergrid1 .SoMe a {
   .instaOne {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    position: relative;
+  }
+  .insatIconWhite {
+    background-image: url(svg/Instagram-Negative.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 9/16;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    z-index: 1;
   }
 
   .plusSign {
     padding: 1rem;
     width: 6%;
     grid-column: 1 / span 5;
+  }
+  .followoninstagram h2 {
+    padding: 3rem;
   }
 
   /* desktop display and fixes */
@@ -1532,6 +1618,10 @@ footer .footergrid1 .SoMe a {
   }
   section.product-right {
     width: 35%;
+  }
+
+  #image-carousel {
+    margin-top: 0;
   }
 
   /* parallax*/
@@ -1661,6 +1751,7 @@ footer .footergrid1 .SoMe a {
   .moreDesigns {
     display: flex;
     padding-top: 4rem;
+    padding-left: 1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
