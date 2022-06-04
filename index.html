@@ -288,9 +288,31 @@
 
     <!-- FRONT PAGE -->
     <main class="frontpagecontent">
-      <div class="frontimg">
+      <!-- <div class="frontimg">
         <a href="productlist.html">Shop New Products</a>
-      </div>
+      </div> -->
+      <div class="carousel-hero">
+        <div class="carousel-item visible" id="pic1">
+          <img src="img/canon/IMG_9493.JPG" alt="shopall" />
+          <a href="productlist.html"><h2>Shop all products</h2></a>
+        </div>
+        <div class="carousel-item" id="pic2">
+          <img src="img/canon/IMG_9480.JPG" alt="gifts" />
+          <a href="index.html#gifts"> <h2>Gift ideas</h2></a>
+
+        </div>
+        <div class="carousel-item" id="pic3">
+          <img src="imgdesigners/artwork.webp" alt="designerotw" />
+          <a href="index.html#designeroft"> <h2>Designer of the week</h2></a>
+        </div>
+        <div class="carousel-actions">
+          <button id="prev" aria-label="previous-slide">
+            <img src="svg/arrowleft.svg" alt="left" />
+          </button>
+          <button id="next" aria-label="next-slide">
+            <img src="svg/arrowright.svg" alt="right" />
+          </button>
+        </div>
 
       <div class="shopcategories">
         <section class="categories">
@@ -377,7 +399,7 @@
         </section>
       </div>
 
-      <div class="artistotweek">
+      <div class="artistotweek" id="designeroft">
         <h2>Designer of the week</h2>
         <div class="artistotweekflex">
           <h3 class="artistotweeksname paddingfix">Cecilie Lund-Rasmussen</h3>
@@ -456,7 +478,7 @@
         </div>
       </div>
       <h2 class="giftHeading">Gift Ideas</h2>
-      <section class="giftIdeas">
+      <section class="giftIdeas" id="gifts">
         <div class="gifts">
           <img src="imginstagram/plategift.webp" alt="housewarming gift idea" />
           <a href="productlist.html"> Housewarming Gifts</a>

@@ -298,6 +298,94 @@ img.mobileLogo1 {
   line-height: 2.5rem;
 }
 
+/* HERO CAROSEL */
+.carousel-hero {
+  overflow: hidden;
+  max-width: 100vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-hero .carousel-item,
+.carousel-hero .hidden {
+  display: none;
+}
+.carousel-item {
+  max-width: 100vw;
+  height: auto;
+  position: relative;
+  display: grid;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* max-width: 600px; */
+}
+
+.carousel-item a {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.753);
+  padding: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  place-self: center;
+  margin-top: 15rem;
+}
+
+.carousel-hero .visible {
+  display: grid;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel-hero .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  top: 20rem;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.carousel-hero .carousel-actions button {
+  border-radius: 50px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+}
+
+.carousel-hero .carousel-actions button img {
+  align-items: center;
+}
+
+.carousel-hero .carousel-actions button:hover {
+  background-color: rgba(255, 255, 255, 0.753);
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.carousel-hero .carousel-actions button#prev {
+  margin-left: 20px;
+}
+
+.carousel-hero .carousel-actions button#next {
+  margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
 /* PRODUCT VIEW */
 
 main#productView {
