@@ -1570,16 +1570,40 @@ footer .footergrid1 .SoMe a {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     position: relative;
+    display: grid;
+  }
+
+  .instaOne:hover .instaPost {
+    opacity: 0.65;
+  }
+
+  .instaOne:hover .overlayIcon {
+    opacity: 1;
   }
   .insatIconWhite {
-    background-image: url(svg/Instagram-Negative.svg);
-    background-size: cover;
+    background-image: url(svg/instawhite.svg);
+    background-size: contain;
     background-repeat: no-repeat;
-    aspect-ratio: 9/16;
-    width: 20%;
-    height: 20%;
-    position: absolute;
+    width: 2rem;
+    height: 2rem;
+
     z-index: 1;
+  }
+  .overlayIcon {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .instaPost {
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
   }
 
   .plusSign {
