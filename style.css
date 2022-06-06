@@ -661,9 +661,10 @@ q {
 }
 .moreDesigns {
   display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 .moreDesigns img {
   max-width: 100%;
@@ -1092,8 +1093,8 @@ q {
 .artistotweeksname {
   margin: 0;
   font-family: var(--ff-sec);
-  font-weight: 200;
-  font-size: var(--fs-l);
+  font-weight: 300;
+  text-transform: none;
 }
 
 .artistotweekinfo a {
@@ -1575,7 +1576,7 @@ footer .footergrid1 .SoMe a {
     width: 100%;
   }
   .popularworks {
-    padding: 0 3rem 0 5rem;
+    padding: 0 3rem;
   }
   .popularworks h3 {
     padding-bottom: 0;
