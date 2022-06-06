@@ -806,6 +806,9 @@ q {
   ul.acc-drpdwn {
     left: -34rem;
   }
+  ul.gift-drpdwn {
+    left: -40rem;
+  }
 
   /* ul.acc-drpdwn a,
   ul.interior-drpdwn a,
@@ -1324,9 +1327,6 @@ q {
 .breadcrumb-productlist a:hover {
   border-bottom: solid 1px rgb(0, 0, 0);
   transition: 0.15s ease-in-out;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 300;
 }
 
 .sidenav {
@@ -1361,6 +1361,7 @@ q {
 .productlist h3 {
   margin-top: 0;
   font-size: var(--fs-s);
+  text-transform: capitalize;
 }
 
 .productlist .artist {

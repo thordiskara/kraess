@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     heightRatio: 0.5,
   }).mount();
 });
-
+// TRANSPARENT HEADER
 const header = document.querySelector("header#landing-header");
 const logo = document.querySelector("img.logo");
 const shopNav = document.querySelector(".nav-first-options");
@@ -48,3 +48,53 @@ window.addEventListener("scroll", () => {
     search.src = "svg/search.svg";
   }
 });
+
+// HERO CAROUSEL
+
+let slidePosition = 0;
+const slides = document.getElementsByClassName("carousel-item");
+const totalSlides = slides.length;
+const timer = setInterval("moveToNextSlide()", 3000);
+
+document.getElementById("next").addEventListener("click", function () {
+  moveToNextSlide();
+  stop();
+  {
+    clearInterval(timer);
+  }
+});
+
+document.getElementById("prev").addEventListener("click", function () {
+  moveToPrevSlide();
+  stop();
+  {
+    clearInterval(timer);
+  }
+});
+
+function updateSlidePosition() {
+  for (let slide of slides) {
+    slide.classList.remove("visible");
+    slide.classList.add("hidden");
+  }
+
+  slides[slidePosition].classList.add("visible");
+}
+
+function moveToNextSlide() {
+  if (slidePosition === totalSlides - 1) {
+    slidePosition = 0;
+  } else {
+    slidePosition++;
+  }
+  updateSlidePosition();
+}
+
+function moveToPrevSlide() {
+  if (slidePosition === 0) {
+    slidePosition = totalSlides - 1;
+  } else {
+    slidePosition--;
+  }
+  updateSlidePosition();
+}
