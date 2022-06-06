@@ -865,6 +865,8 @@ q {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+/*shop by category and splide*/
+
 .shopcategories {
   display: flex;
   flex-direction: column;
@@ -883,12 +885,15 @@ q {
   height: 100%;
   object-fit: contain;
 }
+.splide__slide {
+  position: relative;
+  display: grid;
+}
 
 .slidetext {
   display: block;
   position: absolute;
-  top: 44%;
-  left: 34%;
+  place-self: center;
   padding: 1rem 2rem;
   color: white;
   background-color: rgba(255, 255, 255, 0.753);
@@ -932,7 +937,7 @@ q {
 
 .giftHeading {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2.5rem;
 }
 .gifts {
   position: relative;
@@ -945,14 +950,14 @@ q {
 }
 .gifts a {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.753);
+  background-color: rgba(255, 255, 255, 0.733);
   padding: 1rem;
   font-weight: 400;
   font-size: 1rem;
   place-self: center;
 }
 .gifts a:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 @media screen and (min-width: 600px) {
@@ -1002,6 +1007,7 @@ q {
   background-position: center;
   height: 70vh;
   position: relative;
+  display: grid;
 }
 
 .posterwallbtn {
@@ -1009,8 +1015,7 @@ q {
   padding: 1.5rem;
   cursor: pointer;
   position: absolute;
-  left: 23%;
-  top: 45%;
+  place-self: center;
   cursor: pointer;
 }
 
@@ -1108,11 +1113,7 @@ q {
 }
 
 .popularworks section p {
-  text-align: left;
-}
-
-.smalerImage {
-  width: 90%;
+  text-align: center;
 }
 
 .flexcontainer {
@@ -1578,9 +1579,7 @@ footer .footergrid1 .SoMe a {
   .popularworks h3 {
     padding-bottom: 0;
   }
-  .smalerImage {
-    width: 80%;
-  }
+
   .aboutpic {
     position: relative;
     z-index: 0;
@@ -1606,10 +1605,10 @@ footer .footergrid1 .SoMe a {
 
   .giftIdeas {
     display: flex;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
   }
   .giftHeading {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 }
 
@@ -1658,15 +1657,47 @@ footer .footergrid1 .SoMe a {
     grid-row: 1 / span 2;
     position: relative;
   }
+  .instaTwo {
+    position: relative;
+  }
+  /*insta icon hover effect*/
+  .instaOne:hover .instaPost {
+    opacity: 0.65;
+  }
+  .instaOne:hover .overlayIcon {
+    opacity: 1;
+  }
+
+  .instaTwo:hover .instaPost {
+    opacity: 0.65;
+  }
+  .instaTwo:hover .overlayIcon {
+    opacity: 1;
+  }
+
   .insatIconWhite {
-    background-image: url(svg/Instagram-Negative.svg);
-    background-size: cover;
+    background-image: url(svg/instawhite.svg);
+    background-size: contain;
     background-repeat: no-repeat;
-    aspect-ratio: 9/16;
-    width: 20%;
-    height: 20%;
-    position: absolute;
+    width: 2rem;
+    height: 2rem;
     z-index: 1;
+  }
+  .overlayIcon {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .instaPost {
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
   }
 
   .plusSign {
