@@ -73,6 +73,8 @@ h2 {
 h3 {
   font-family: var(--ff-sec);
   color: var(--clr-blck);
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 /*HEADER*/
@@ -401,7 +403,6 @@ main#productView h3 {
 main#productView p {
   font-size: 14px;
   line-height: 1.7rem;
-  font-weight: 300;
 }
 main#productView img {
   max-width: 100%;
@@ -466,7 +467,6 @@ section.product-right {
 }
 h3.product-name {
   padding-top: 1.5rem;
-  font-weight: 400;
 }
 h4.price {
   font-weight: 500;
@@ -586,7 +586,6 @@ section.related-products h3 {
 .designers h3 {
   padding: 1rem 0;
   text-align: center;
-  font-weight: 400;
 }
 .designers p {
   padding: 0.5rem 1rem;
@@ -639,7 +638,6 @@ ul.ulPadding {
 }
 .designerInfo h3 {
   padding: 1rem 0;
-  font-weight: 400;
   text-align: center;
 }
 .designerInfo p {
@@ -674,9 +672,6 @@ q {
 .shopMore {
   text-align: center;
   padding-top: 2.2rem;
-}
-.shopMore h3 {
-  font-weight: 400;
 }
 .shopMoreInfo {
   font-weight: 300;
@@ -1103,9 +1098,7 @@ q {
 }
 
 .popularworks h3 {
-  font-family: var(--ff-pri);
-  font-weight: 200;
-  font-size: var(--fs-l);
+  text-align: center;
   padding-left: 5vw;
   padding-top: 5vw;
   padding-bottom: 3vh;
@@ -1458,7 +1451,9 @@ footer {
   z-index: 10;
   padding-top: var(--sp-s);
 }
-
+footer h3 {
+  text-transform: capitalize;
+}
 .footergrid1 {
   display: flex;
   gap: 1rem;
@@ -1690,6 +1685,7 @@ footer .footergrid1 .SoMe a {
   }
   h3.product-name {
     padding-top: 0;
+    text-transform: capitalize;
   }
   .artist-flex {
     display: none;
