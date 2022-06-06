@@ -323,6 +323,7 @@ img.mobileLogo1 {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  object-position: center;
   /* max-width: 600px; */
 }
 
@@ -1004,7 +1005,7 @@ q {
 /* POSTERWALL ON FRONTPAGE */
 
 .posterwallimg {
-  background-image: url(img/posterbig.webp);
+  background-image: url(img/IMG_9493.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
