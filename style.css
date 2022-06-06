@@ -1085,6 +1085,7 @@ q {
 .productlist h3 {
   margin-top: 0;
   font-size: var(--fs-s);
+  text-transform: capitalize;
 }
 
 .productlist .artist {

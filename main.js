@@ -91,7 +91,7 @@ function showProducts(productArray) {
     copy.querySelector(".artist").textContent = product.designer;
     copy
       .querySelector("a")
-      .setAttribute("href", `productView.html?id=${product.id}`);
+      .setAttribute("href", `productview.html?id=${product.id}`);
     copy.querySelector(".price span").textContent = product.price;
     copy.querySelector(".image").src =
       product._embedded[
