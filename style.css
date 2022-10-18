@@ -785,9 +785,10 @@ q {
 }
 
 .artistotweekflex .lowerpic {
-  visibility: hidden;
-  position: absolute;
-  z-index: -5;
+  /* visibility: hidden; */
+  display: none;
+  /* position: absolute;
+  z-index: -5; */
 }
 
 .artistotweekflex .upperpic {
@@ -857,9 +858,9 @@ q {
 }
 
 .aboutpic {
-  position: absolute;
-  z-index: -5;
-  visibility: hidden;
+  /* position: absolute;
+  z-index: -5; */
+  display: none;
 }
 
 .newsletterbox {
@@ -1208,7 +1209,7 @@ footer .footergrid1 .SoMe a {
 /* ARTIST OF THE WEEK DESKTOP */
 @media only screen and (min-width: 700px) {
   .artistotweekflex .lowerpic {
-    visibility: visible;
+    display: block;
     z-index: 0;
     position: absolute;
     width: 70%;
@@ -1264,7 +1265,7 @@ footer .footergrid1 .SoMe a {
   .aboutpic {
     position: relative;
     z-index: 0;
-    visibility: visible;
+    display: block;
     align-self: center;
   }
 

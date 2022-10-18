@@ -8,14 +8,14 @@ menuIcon.addEventListener("click", () => {
 
 // SUBMENU - NOT WORKING
 
-// var arrow = document.getElementsByClassName(".nav-item");
+// var arrow = document.querySelectorAll(".nav-item .arrow");
 // var i;
 
 // for (i = 0; i < arrow.length; i++) {
 //   console.log("Blaaaa");
 //   arrow[i].addEventListener("click", function () {
 //     this.classList.toggle("active");
-//     var subinfo = this.nextElementSibling;
+//     var subinfo = document.querySelector(".submenu");
 //     var icon = document.querySelector(".nav-item .arrow");
 //     if (subinfo.style.display === "flex") {
 //       subinfo.style.display = "none";
@@ -25,24 +25,27 @@ menuIcon.addEventListener("click", () => {
 //       icon.src = "svg/arrowleft.svg";
 //     }
 //   });
-
-// var arrowToggle = document.querySelectorAll(".nav-item .arrow");
-// arrowToggle.addEventListener("click", toggleAll);
-
-// function toggleAll(arrowToggle) {
-//   arrowToggle.forEach(() => {
-//     console.log("Blaaaa");
-//     var subMenu = document.querySelector(".submenu");
-//     var arrow = document.querySelector(".nav-item .arrow");
-//     if (subMenu.style.display === "flex") {
-//       subMenu.style.display = "none";
-//       arrow.src = "svg/arrowright.svg";
-//     } else {
-//       subMenu.style.display = "flex";
-//       arrow.src = "svg/arrowdown.svg";
-//     }
-//   });
 // }
+
+let arrowToggle = document.querySelectorAll(".nav-item .arrow");
+
+arrowToggle.forEach(toggleAll);
+
+function toggleAll(arrowsDown) {
+  arrowsDown.addEventListener("click", () => {
+    console.log("Blaaaa");
+    // this.classList.toggle("active");
+    var subMenu = document.querySelector(".submenu");
+    var arrow = document.querySelector(".nav-item .arrow");
+    if (subMenu.style.display === "flex") {
+      subMenu.style.display = "none";
+      arrow.src = "svg/arrowright.svg";
+    } else {
+      subMenu.style.display = "flex";
+      arrow.src = "svg/arrowdown.svg";
+    }
+  });
+}
 
 /* FEATURE DROP DOWN */
 function myFunction() {
